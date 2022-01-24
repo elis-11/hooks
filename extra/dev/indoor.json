@@ -1,20 +1,8 @@
 [
-    {
-        "name": "Anthurium",
-        "image": "/images/indoor/anthurium-potted-plant-flamingo-plant__09727663_s5.png",
-        "image_small": "/images/indoor/second/",
-        "price": 9,
-        "light": "scattered light to semi-shade",
-        "winterHardness": "frost sensitive",
-        "nutrientRequirements": "low in nutrients",
-        "GrowthHeight": "from 50 cm to 300 cm",
-        "SoilMoisture": "fresh to humid",
-        "description": "Anthurium is a genus of herbs often growing as epiphytes on other plants. Some are terrestrial. The leaves are often clustered and are variable in shape. The inflorescence bears small flowers which are perfect, containing male and female structures. ",
-        "abstract": "Anthurium is a genus of herbs often growing as epiphytes on other plants."
-    },
+    
     {
         "name": "Dypsis lutescens",
-        "image": "/images/indoor/dypsis-lutescens-potted-plant-areca-palm__0443890_pe594605_s5.png",
+        "image": "/images/dypsis-lutescens-potted-plant-areca-palm__0443890_pe594605_s5.png",
         "image_small": "/images/indoor/second/",
         "price": 79,
         "light": "scattered light to semi-shade",
@@ -23,24 +11,13 @@
         "GrowthHeight": "from 1 m to 4 m",
         "SoilMoisture": "fresh to humid",
         "description": "It is grown as an ornamental plant in gardens in tropical and subtropical regions, and elsewhere indoors as a houseplant. It has gained the Royal Horticultural Society's Award of Garden Merit.",
-        "abstract": "It is grown as an ornamental plant in gardens in tropical and subtropical regions."
+        "abstract": "It is grown as an ornamental plant in gardens in tropical and subtropical regions.",
+        "indoor": "indoor"
     },
-    {
-        "name": "Phalaenopsis",
-        "image": "/images/indoor/gradvis-plant-pot-in-outdoor-grey__126220742_pe828358_s5.png",
-        "image_small": "/images/indoor/second/",
-        "price": 23,
-        "light": "scattered light to semi-shade",
-        "winterHardness": "frost sensitive",
-        "nutrientRequirements": "low in nutrients",
-        "GrowthHeight": "from 10 cm to 40 cm",
-        "SoilMoisture": "fresh to humid",
-        "description": "Orchids in the genus Phalaenopsis are monopodial epiphytic, sometimes lithophytic herbs with long, coarse roots and short leafy stems hidden by overlapping leaf bases. The leaves are usually arranged in two rows.",
-        "abstract": "Orchids in the genus Phalaenopsis are monopodial epiphytic."
-    },
+   
     {
         "name": "Orchids",
-        "image": "/images/indoor/Honor-White-Orchid-Glass-Pot-5752751732-2.png",
+        "image": "/images/Honor-White-Orchid-Glass-Pot-5752751732-2.png",
         "image_small": "/images/indoor/second/",
         "price": 80,
         "light": "scattered light to semi-shade",
@@ -49,11 +26,12 @@
         "GrowthHeight": "from 10 cm to 40 cm",
         "SoilMoisture": "fresh to humid",
         "description": "Queen of Flowers . They belong within the class of flowering plants to the monocotyledonous plants (monocotyledons). About 1000 genera with 15,000 to 30,000 species are recognized by botanists",
-        "abstract": "Queen of Flowers . They belong within the class of flowering plants."
+        "abstract": "Queen of Flowers . They belong within the class of flowering plants.",
+        "indoor": "indoor"
     },
     {
         "name": "Orchidee Phalaenopsis 'Vienna' rose",
-        "image": "/images/indoor/Honor-White-Orchid-Glass-Pot-5752751732-2.png",
+        "image": "/images/phalaenopsis-potted-plant-orchid-1-stem-assorted-colours__0450554_pe668054_s5.png",
         "image_small": "/images/indoor/second/",
         "price": 10,
         "light": "scattered light to semi-shade",
@@ -62,11 +40,12 @@
         "GrowthHeight": "from 10 cm to 40 cm",
         "SoilMoisture": "fresh to humid",
         "description": "Fairytale pink flowers. The orchid 'Vienna' (Phalaenopsis multiflora) with 3 branches gives your living room a warm atmosphere. For a fairy tale in the house. The orchid can bloom two to three times a year.",
-        "abstract": "Fairytale pink flowers. The orchid 'Vienna' (Phalaenopsis multiflora)."
+        "abstract": "Fairytale pink flowers. The orchid 'Vienna' (Phalaenopsis multiflora).",
+        "indoor": "indoor"
     },
     {
         "name": "Vriesea",
-        "image": "/images/indoor/Vriesea_0634292_PE697502_S5.png",
+        "image": "/images/Vriesea_0634292_PE697502_S5.png",
         "image_small": "/images/indoor/second/",
         "price": 28,
         "light": "scattered light to semi-shade",
@@ -75,11 +54,12 @@
         "GrowthHeight": "from 20 cm to 30 cm",
         "SoilMoisture": "fresh to humid",
         "description": "The plant genus Vriesea belongs to the bromeliad family (Bromeliaceae), which also includes the pineapple. Some species and their cultivars are ornamental plants for tropical parks and gardens and well suited as indoor plants.",
-        "abstract": "The plant genus Vriesea belongs to the bromeliad family (Bromeliaceae), which also includes the pineapple."
+        "abstract": "The plant genus Vriesea belongs to the bromeliad family (Bromeliaceae), which also includes the pineapple.",
+        "indoor": "indoor"
     },
     {
         "name": "White World orchidee",
-        "image": "/images/indoor/White-Real-Touch-Phalaenopsis-Orchid-Vanilla-Grass-in-a-Glass-89b816b0a.png",
+        "image": "/images/White-Real-Touch-Phalaenopsis-Orchid-Vanilla-Grass-in-a-Glass-89b816b0a.png",
         "image_small": "/images/indoor/second/",
         "price": 120,
         "light": "scattered light to semi-shade",
@@ -88,11 +68,26 @@
         "GrowthHeight": "from 40 cm to 70 cm",
         "SoilMoisture": "fresh to humid",
         "description": "Queen of Flowers . They belong within the class of flowering plants to the monocotyledonous plants (monocotyledons). About 1000 genera with 15,000 to 30,000 species are recognized by botanists",
-        "abstract": "Queen of Flowers . They belong within the class of flowering plants."
+        "abstract": "Queen of Flowers . They belong within the class of flowering plants.",
+        "indoor": "indoor"
+    },
+    {
+        "name": "Howea Fosteriana",
+        "image": "/images/",
+        "image_small": "/images/indoor/second/",
+        "price": 110,
+        "light": "scattered light to semi-shade",
+        "winterHardness": "frost sensitive",
+        "nutrientRequirements": "low in nutrients",
+        "GrowthHeight": "from 1 m to 3 m",
+        "SoilMoisture": "fresh to humid",
+        "description": "Howea forsteriana, the Kentia palm, thatch palm or palm court palm, is a species of flowering plant in the palm family, Arecaceae, endemic to Lord Howe Island in Australia. It is also widely grown on Norfolk Island. It is a relatively slow-growing palm.",
+        "abstract": "Howea forsteriana, the Kentia palm, thatch palm or palm court palm, is a species of flowering plant in the palm.",
+        "indoor": "indoor"
     },
     {
         "name": "",
-        "image": "/images/indoor/",
+        "image": "/images/",
         "image_small": "/images/indoor/second/",
         "price": ,
         "light": "scattered light to semi-shade",
@@ -101,11 +96,12 @@
         "GrowthHeight": "from 10 cm to 40 cm",
         "SoilMoisture": "fresh to humid",
         "description": "",
-        "abstract": ""
+        "abstract": "",
+        "indoor": "indoor"
     },
     {
         "name": "",
-        "image": "/images/indoor/",
+        "image": "/images/",
         "image_small": "/images/indoor/second/",
         "price": ,
         "light": "scattered light to semi-shade",
@@ -114,11 +110,12 @@
         "GrowthHeight": "from 10 cm to 40 cm",
         "SoilMoisture": "fresh to humid",
         "description": "",
-        "abstract": ""
+        "abstract": "",
+        "indoor": "indoor"
     },
     {
         "name": "",
-        "image": "/images/indoor/",
+        "image": "/images/",
         "image_small": "/images/indoor/second/",
         "price": ,
         "light": "scattered light to semi-shade",
@@ -127,11 +124,12 @@
         "GrowthHeight": "from 10 cm to 40 cm",
         "SoilMoisture": "fresh to humid",
         "description": "",
-        "abstract": ""
+        "abstract": "",
+        "indoor": "indoor"
     },
     {
         "name": "",
-        "image": "/images/indoor/",
+        "image": "/images/",
         "image_small": "/images/indoor/second/",
         "price": ,
         "light": "scattered light to semi-shade",
@@ -140,6 +138,63 @@
         "GrowthHeight": "from 10 cm to 40 cm",
         "SoilMoisture": "fresh to humid",
         "description": "",
-        "abstract": ""
+        "abstract": "",
+        "indoor": "indoor"
+    },
+    {
+        "name": "",
+        "image": "/images/",
+        "image_small": "/images/indoor/second/",
+        "price": ,
+        "light": "scattered light to semi-shade",
+        "winterHardness": "frost sensitive",
+        "nutrientRequirements": "low in nutrients",
+        "GrowthHeight": "from 10 cm to 40 cm",
+        "SoilMoisture": "fresh to humid",
+        "description": "",
+        "abstract": "",
+        "indoor": "indoor"
+    },
+    {
+        "name": "",
+        "image": "/images/",
+        "image_small": "/images/indoor/second/",
+        "price": ,
+        "light": "scattered light to semi-shade",
+        "winterHardness": "frost sensitive",
+        "nutrientRequirements": "low in nutrients",
+        "GrowthHeight": "from 10 cm to 40 cm",
+        "SoilMoisture": "fresh to humid",
+        "description": "",
+        "abstract": "",
+        "indoor": "indoor"
+    },
+    {
+        "name": "",
+        "image": "/images/",
+        "image_small": "/images/indoor/second/",
+        "price": ,
+        "light": "scattered light to semi-shade",
+        "winterHardness": "frost sensitive",
+        "nutrientRequirements": "low in nutrients",
+        "GrowthHeight": "from 10 cm to 40 cm",
+        "SoilMoisture": "fresh to humid",
+        "description": "",
+        "abstract": "",
+        "indoor": "indoor"
+    },
+    {
+        "name": "",
+        "image": "/images/",
+        "image_small": "/images/indoor/second/",
+        "price": ,
+        "light": "scattered light to semi-shade",
+        "winterHardness": "frost sensitive",
+        "nutrientRequirements": "low in nutrients",
+        "GrowthHeight": "from 10 cm to 40 cm",
+        "SoilMoisture": "fresh to humid",
+        "description": "",
+        "abstract": "",
+        "indoor": "indoor"
     }
 ]
