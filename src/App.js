@@ -1,16 +1,13 @@
 import "./App.scss";
+import { Content } from "./components/Content";
+import { Header } from "./components/Header";
 // import { Navbar } from "./components/Navbar";
 
 const App = () => {
-//--1
-// const name = 'Dave'
-// const name1 = 'John'
-// --2
-const handleNameChange = () => {
-  const names = ['Rob', 'John', 'Dave', 'Peter', 'Luis']
-  const concret = Math.floor(Math.random() *5)
-  return names[concret]
-}
+  //--1
+  // const name = 'Dave'
+  // const name1 = 'John'
+  // --2
 
   return (
     <div className="App">
@@ -21,7 +18,8 @@ const handleNameChange = () => {
        <p>Hello {name}!</p>
       <p>Hello World!</p> */}
       {/* --2 */}
-      Hello {handleNameChange()}!
+      <Content />
+      <Header />
     </div>
   );
 };

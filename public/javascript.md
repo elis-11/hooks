@@ -18,3 +18,28 @@
 //   console.log("Email:", emailValue);
 //   console.log("Message:", messageValue);
 // // });
+-----------------
+export const App = () => {
+//--1
+// const name = 'Dave'
+// const name1 = 'John'
+// --2
+const handleNameChange = () => {
+  const names = ['Rob', 'John', 'Dave', 'Peter', 'Luis']
+  const concret = Math.floor(Math.random() *5)
+  return names[concret]
+}
+
+  return (
+    <div className="App">
+      {/* --1 */}
+      {/* Hi <p>Elis</p>
+       <p>Hello {name1}!</p>
+       <p>Hello {name}!</p>
+      <p>Hello World!</p> */}
+      {/* --2 */}
+      Hello {handleNameChange()}!
+    </div>
+  );
+};
+-----------------
