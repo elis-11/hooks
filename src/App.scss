@@ -19,7 +19,7 @@
 	}
 	Header {
 		width: 100vw;
-		height: 4vh;
+		height: 3vh;
 		// margin: 30vn;
 		// padding: 1vw;
 		display: flex;
@@ -36,5 +36,8 @@
 		justify-content: center;
 		align-items: center;
 		overflow-y: auto;
+	}
+	Footer {
+		height: 3vh;
 	}
 }
