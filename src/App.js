@@ -1,5 +1,6 @@
 import "./App.scss";
 import { Content } from "./components/Content";
+import { Foother } from "./components/Foother";
 import { Header } from "./components/Header";
 // import { Navbar } from "./components/Navbar";
 
@@ -18,8 +19,9 @@ const App = () => {
        <p>Hello {name}!</p>
       <p>Hello World!</p> */}
       {/* --2 */}
-      <Content />
       <Header />
+      <Content />
+      <Foother />
     </div>
   );
 };
