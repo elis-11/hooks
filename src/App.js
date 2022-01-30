@@ -4,12 +4,15 @@ import "./App.scss";
 const App = () => {
 
 const name = 'Dave'
+const name1 = 'John'
 
   return (
     <div className="App">
       {/* <Navbar /> */}
-      Hi
-      <p>{name}</p>
+      Hi <p>Elis</p>
+       <p>Hello {name1}!</p>
+       <p>Hello {name}!</p>
+      <p>Hello World!</p>
     </div>
   );
 };
