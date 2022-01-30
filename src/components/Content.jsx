@@ -1,4 +1,9 @@
 export const Content = () => {
+const contentStyle={
+        backgroundColor: 'white',
+        color: 'black'
+    }
+  
 
     const handleNameChange = () => {
         const names = ['Rob', 'John', 'Dave', 'Peter', 'Luis']
@@ -6,7 +11,7 @@ export const Content = () => {
         return names[concret]
     }
   return (
-  <main>
+  <main style={contentStyle}>
 <p>
     Hello {handleNameChange()}!
 </p>

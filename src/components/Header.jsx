@@ -1,8 +1,13 @@
 import React from 'react';
 
 export const Header = () => {
-  return (<header>
+  return (
+  <header style={{
+      backgroundColor: 'white',
+      color: 'black'
+  }}>
 <h1>Groceries List</h1>
-  </header>)
+  </header>
+  )
 };
 // export default Header;
