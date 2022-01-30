@@ -1,24 +1,27 @@
+import { useState } from "react";
+
 export const Content = () => {
   //--style
   const contentStyle = { color: "white" };
+
+const [name, setName] = useState('')
+const [count, setCount] = useState(0)
 
   //--1
   const handleNameChange = () => {
     const names = ["Rob", "John", "Dave", "Peter", "Luis"];
     const concret = Math.floor(Math.random() * 5);
-    return names[concret];
+    setName(names[concret]);
   };
   //--2
   const handleClick = () => {
-    console.log("You clicked it");
+      setCount(count + 1)
+      setCount(count + 1)
+    console.log(count);
   };
   //--3
-  const handleClick2 = (name) => {
-    console.log(`${name} was clicked`);
-  };
-  //--4
-  const handleClick3 = (e) => {
-    console.log(e.target.innerText);
+  const handleClick2 = () => {
+    console.log(count);
   };
 
   return (
@@ -26,14 +29,14 @@ export const Content = () => {
     <main style={contentStyle}>
       {/* --1 --20 */}
       <p onDoubleClick={handleClick}>
-          Hello {handleNameChange()}!
+          Hello {name}!
       </p>
+      {/*  --44 */}
+      <button onClick={handleNameChange}>Change Name</button>
       {/* --2 --44 */}
       <button onClick={handleClick}>Click it</button>
-      {/* --3 --44 */}
-      <button onClick={() => handleClick2('Rob')}>Click it</button>
-      {/* --4 --48 */}
-      <button onClick={(e) => handleClick3(e)}>Click it</button>
+      {/* --3 --48 */}
+      <button onClick={handleClick2}>Click it</button>
     </main>
   );
 };
