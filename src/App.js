@@ -7,8 +7,8 @@ const App = () => {
 // const name1 = 'John'
 // --2
 const handleNameChange = () => {
-  const names = ['Rob', 'John', 'Dave']
-  const concret = Math.floor(Math.random() *3)
+  const names = ['Rob', 'John', 'Dave', 'Peter', 'Luis']
+  const concret = Math.floor(Math.random() *5)
   return names[concret]
 }
 
@@ -21,7 +21,7 @@ const handleNameChange = () => {
        <p>Hello {name}!</p>
       <p>Hello World!</p> */}
       {/* --2 */}
-      Hello {handleNameChange()}
+      Hello {handleNameChange()}!
     </div>
   );
 };
