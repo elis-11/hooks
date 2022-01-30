@@ -12,11 +12,29 @@
 	// justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
+	margin: auto;
   
 	img {
 		width: 8vw;
 	}
 	Header {
-		
+		width: 100vw;
+		height: 4vh;
+		// margin: 30vn;
+		// padding: 1vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	Main {
+		width: 100vw;
+		height: 92vh;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		justify-content: center;
+		align-items: center;
+		overflow-y: auto;
 	}
 }
