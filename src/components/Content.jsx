@@ -44,6 +44,7 @@ export const Content = () => {
               checked={item.checked}
             />
             <label
+            style={(item.checked) ? {textDecoration: 'line-through' } : null}
               onDoubleClick={() => handleCheck(item.id)} // <-- localStorage
             >
               {item.item}
