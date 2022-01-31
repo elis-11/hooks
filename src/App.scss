@@ -59,20 +59,20 @@
         }
         input[type="checkbox"] {
           text-align: center;
-          width: 2.5rem;
-          height: 1.6rem;
+          width: 2.5vw;
+          height: 2.5vh;
           cursor: pointer;
-          margin-right: 0.5rem;
+          margin-right: 0.5vw;
         }
         input[type="checkbox"]:focus + label {
             text-decoration: underline;
           }
         label {
-          font-size: 1.5rem;
+          font-size: 2 vw;
           flex-grow: 1;
         }
         svg {
-          width: 2;
+          width: 2vw;
           max-width: 2vw;
           height: 2vw;
           color: rgb(245, 245, 248);
