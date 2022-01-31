@@ -9,17 +9,17 @@ export const Content = () => {
     {
       id: 1,
       checked: false,
-      item: "tralala",
+      item: "Item 1",
     },
     {
       id: 2,
       checked: false,
-      item: "item 2",
+      item: "Item 2",
     },
     {
       id: 3,
       checked: false,
-      item: "item 3",
+      item: "Item 3",
     },
   ]);
 
@@ -28,6 +28,8 @@ export const Content = () => {
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setItems(listItems);
+    // -- LOCALSTORAGE --
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
   return (
@@ -41,7 +43,9 @@ export const Content = () => {
               onChange={() => handleCheck(item.id)}
               checked={item.checked}
             />
-            <label>{item.item}</label>
+            <label>
+              {item.item}
+            </label>
             {/* <button>Delete</button> */}
             <FaTrashAlt role="button" tabIndex="0" />
           </li>
