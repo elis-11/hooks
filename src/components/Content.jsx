@@ -43,7 +43,9 @@ export const Content = () => {
               onChange={() => handleCheck(item.id)}
               checked={item.checked}
             />
-            <label>
+            <label
+              onDoubleClick={() => handleCheck(item.id)} // <-- localStorage
+            >
               {item.item}
             </label>
             {/* <button>Delete</button> */}
