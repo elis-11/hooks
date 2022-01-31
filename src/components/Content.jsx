@@ -41,7 +41,7 @@ export const Content = () => {
   return (
     //--style
     <main style={contentStyle}>
-      {items.length ? (
+      {items.length ? (  //empty list 1:33
         <ul>
           {items.map((item) => (
             <li className="item" key={item.id}>
@@ -66,7 +66,7 @@ export const Content = () => {
           ))}
         </ul>
       ) : (
-        <p style={{ marginTop: "2vw" }}>Your list is empty.</p>
+        <p style={{ marginTop: "2vw" }}>Your list is empty.</p>  //empty list 1:33
       )}
     </main>
   );
