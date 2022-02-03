@@ -28,7 +28,7 @@ export const Content = () => {
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setItems(listItems);
-    // -- LOCALSTORAGE --
+    // -- LOCALSTORAGE -- 
     localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
