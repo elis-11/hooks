@@ -6,13 +6,13 @@ export const Dash = () => {
       Dash
       <ul>
         <li>
-          <Link to="">Profile</Link>
+          <Link to="">Profile 1</Link>
         </li>
         <li>
-          <Link to="orders">Orders</Link>
+          <Link to="orders">Orders 1</Link>
         </li>
         <li>
-          <Link to="quotes">Quotes</Link>
+          <Link to="quotes">Quotes 1</Link>
         </li>
       </ul>
       <div className="dashboard">

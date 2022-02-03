@@ -22,7 +22,7 @@ const App = () => {
             <Link to="dashboard" activeClassName="active">Dashboard</Link>
           </li>
           <li>
-            <Link to="dashboard" activeClassName="active">Dash</Link>
+            <Link to="dash" activeClassName="active">Dash</Link>
           </li>
           <li>
             <Link to="about" activeClassName="active">About</Link>
@@ -35,10 +35,10 @@ const App = () => {
       <div className="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/count" element={<Count />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/dash" element={<Dash />} />
+          <Route path="about" element={<About />} />
+          <Route path="count" element={<Count />} />
+          <Route path="dashboard/*" element={<Dashboard />} />
+          <Route path="dash/*" element={<Dash />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
