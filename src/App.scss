@@ -15,6 +15,29 @@
   color: white;
   margin: auto;
 
+  //---------------
+  body {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+  }
+  .main {
+    padding: 1rem;
+  }
+  //---------------
+
   img {
     width: 8vw;
   }

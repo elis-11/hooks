@@ -22,3 +22,25 @@ my-app
     └── setupTests.js
     
     `
+
+    --FOOTHER.JSX--
+    import React from "react";
+
+export const Foother = () => {
+  const today = new Date();
+  return (
+    <foother>
+      <p>Copyright &copy; {today.getFullYear()}</p>
+    </foother>
+  );
+};
+--HEADER.JSX--
+import React from "react";
+
+export const Header = () => {
+  return (
+    <header style={{ color: "white" }}>
+      <h1>Groceries List</h1>
+    </header>
+  );
+};

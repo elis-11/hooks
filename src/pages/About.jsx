@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
-export const Content = () => {
+import  '../App.scss';
+
+export const About = () => {
   //--style
   const contentStyle = { color: "white" };
 
