@@ -59,8 +59,25 @@
   .dashboard {
     padding: 1rem 0;
   }
-
-  -------- img {
+//-----ORDERS----
+ul.orders {
+  flex-direction: column;
+  border: 1px solid;
+  padding: 0.5rem;
+}
+.orders li {
+  padding: 0.5rem 0;
+}
+ul.invoices {
+  flex-direction: column;
+  border: 1px solid;
+  padding: 0.5rem;
+}
+.invoices li {
+  padding: 0.5rem 0;
+}
+-----------------
+  img {
     width: 8vw;
   }
   Header {

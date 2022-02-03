@@ -6,6 +6,7 @@ import { About } from "./pages/About";
 import { Count } from "./pages/Count";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
+import RouteAsObj from "./RouteAsObj";
 
 const App = () => {
   // const name = 'Dave'
@@ -16,19 +17,34 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/" activeClassName="active" end>Home</Link>
+            <Link to="/" activeClassName="active" end>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="dashboard" activeClassName="active">Dashboard</Link>
+            <Link to="dashboard" activeClassName="active">
+              Dashboard
+            </Link>
           </li>
           <li>
-            <Link to="dash" activeClassName="active">Dash</Link>
+            <Link to="dash" activeClassName="active">
+              Dash
+            </Link>
           </li>
           <li>
-            <Link to="about" activeClassName="active">About</Link>
+            <Link to="about" activeClassName="active">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="count" activeClassName="active">Count</Link>
+            <Link to="count" activeClassName="active">
+              Count
+            </Link>
+          </li>
+          <li>
+            <Link to="/object_route" activeClassName="active">
+              Route as Object
+            </Link>
           </li>
         </ul>
       </nav>
@@ -38,7 +54,8 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="count" element={<Count />} />
           <Route path="dashboard/*" element={<Dashboard />} />
-          <Route path="dash/*" element={<Dash />} />
+          <Route path="dash" element={<Dash />} />
+          <Route path="object_route/*" element={<RouteAsObj />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
@@ -49,4 +66,3 @@ const App = () => {
   );
 };
 export default App;
-// 1:17
