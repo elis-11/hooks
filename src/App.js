@@ -1,3 +1,5 @@
+// import loadable from "@loadable/component";
+import React from "react";
 import { Routes, Route, NavLink as Link } from "react-router-dom";
 import "./App.scss";
 import { Dash } from "./components/Dash";
@@ -13,6 +15,15 @@ import PrivateRoute from "./components/auth/PrivateRoute";
 import ProtectedPage from "./components/auth/ProtectedPage";
 import { PublicPage } from "./components/auth/PublicPage";
 
+//------LOADING-----
+// const Loading = () => {
+//   return <div>Loading...</div>;
+// };
+
+// const Dashboard = loadable(() => import("./Dashboard.jsx"), {
+//   fallback: <Loading />,
+// });
+//  LOADING-END-----
 const App = () => {
   // const name = 'Dave'
   return (
@@ -70,14 +81,14 @@ const App = () => {
       </nav>
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />}></Route> 
-          <Route path="about" element={<About />}></Route> 
-          <Route path="count" element={<Count />}></Route> 
-          <Route path="dashboard/*" element={<Dashboard />}></Route> 
-          <Route path="dash" element={<Dash />}></Route> 
-          <Route path="object_route/*" element={<RouteAsObj />}></Route> 
-          <Route path="search" element={<Search />}></Route> 
-          <Route path="public" element={<PublicPage />}></Route> 
+          <Route path="/" element={<Home />}></Route>
+          <Route path="about" element={<About />}></Route>
+          <Route path="count" element={<Count />}></Route>
+          <Route path="dashboard/*" element={<Dashboard />}></Route>
+          <Route path="dash" element={<Dash />}></Route>
+          <Route path="object_route/*" element={<RouteAsObj />}></Route>
+          <Route path="search" element={<Search />}></Route>
+          <Route path="public" element={<PublicPage />}></Route>
           <Route
             path="protected"
             element={
