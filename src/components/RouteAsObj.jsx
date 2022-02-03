@@ -1,6 +1,6 @@
-import React from "react"
-import { useRoutes, Outlet } from "react-router"
-import { Link } from "react-router-dom"
+import React from "react";
+import { useRoutes, Outlet } from "react-router";
+import { Link } from "react-router-dom";
 
 const RouteAsObj = () => {
   let element = useRoutes([
@@ -16,7 +16,7 @@ const RouteAsObj = () => {
       ],
     },
     { path: "*", element: <NotFound /> },
-  ])
+  ]);
 
   return (
     <div>
@@ -33,11 +33,11 @@ const RouteAsObj = () => {
       </ul>
       {element}
     </div>
-  )
-}
+  );
+};
 
-const Route1 = () => <h1>Route1</h1>
-const Route2 = () => <h1>Route2</h1>
+const Route1 = () => <h1>Route1</h1>;
+const Route2 = () => <h1>Route2</h1>;
 const Route3 = () => {
   return (
     <div>
@@ -52,10 +52,10 @@ const Route3 = () => {
       </ul>
       <Outlet />
     </div>
-  )
-}
-const Child1 = () => <h2>Child1</h2>
-const Child2 = () => <h2>Child2</h2>
-const NotFound = () => <h1>NotFound</h1>
+  );
+};
+const Child1 = () => <h2>Child1</h2>;
+const Child2 = () => <h2>Child2</h2>;
+const NotFound = () => <h1>NotFound</h1>;
 
-export default RouteAsObj
+export default RouteAsObj;

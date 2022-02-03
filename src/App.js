@@ -6,7 +6,8 @@ import { About } from "./pages/About";
 import { Count } from "./pages/Count";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
-import RouteAsObj from "./RouteAsObj";
+import RouteAsObj from "./components/RouteAsObj";
+import Search from "./components/Search";
 
 const App = () => {
   // const name = 'Dave'
@@ -46,6 +47,11 @@ const App = () => {
               Route as Object
             </Link>
           </li>
+          <li>
+            <Link to="/search" activeClassName="active">
+              Search
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className="main">
@@ -56,6 +62,7 @@ const App = () => {
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="dash" element={<Dash />} />
           <Route path="object_route/*" element={<RouteAsObj />} />
+          <Route path="search" element={<Search />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
