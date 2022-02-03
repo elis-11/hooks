@@ -15,23 +15,30 @@
   color: white;
   margin: auto;
 
-  //---------------
+  //-----ROUTER-6----
   body {
     margin: 0 auto;
     max-width: 900px;
   }
   nav ul {
+    // width: 100vw;
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
-  
+
   nav a {
-    text-decoration: none;
+    color: rgb(248, 245, 245);
+    // background-color: rgb(190, 187, 187);
     display: inline-block;
     padding: 1rem;
+    text-decoration: none;
+  }
+  nav a.active {
+    color: rgb(161, 154, 154);
   }
   .main {
     padding: 1rem;
@@ -89,8 +96,8 @@
           margin-right: 0.5vw;
         }
         input[type="checkbox"]:focus + label {
-            text-decoration: underline;
-          }
+          text-decoration: underline;
+        }
         label {
           font-size: 2 vw;
           flex-grow: 1;
