@@ -8,6 +8,10 @@ import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import RouteAsObj from "./components/RouteAsObj";
 import Search from "./components/Search";
+import LoginPage from "./components/auth/LoginPage";
+import PrivateRoute from "./components/auth/PrivateRoute";
+import ProtectedPage from "./components/auth/ProtectedPage";
+import { PublicPage } from "./components/auth/PublicPage";
 
 const App = () => {
   // const name = 'Dave'
@@ -23,22 +27,22 @@ const App = () => {
             </Link>
           </li>
           <li>
-            <Link to="dashboard" activeClassName="active">
+            <Link to="/dashboard" activeClassName="active">
               Dashboard
             </Link>
           </li>
           <li>
-            <Link to="dash" activeClassName="active">
+            <Link to="/dash" activeClassName="active">
               Dash
             </Link>
           </li>
           <li>
-            <Link to="about" activeClassName="active">
+            <Link to="/about" activeClassName="active">
               About
             </Link>
           </li>
           <li>
-            <Link to="count" activeClassName="active">
+            <Link to="/count" activeClassName="active">
               Count
             </Link>
           </li>
@@ -52,18 +56,38 @@ const App = () => {
               Search
             </Link>
           </li>
+          <li>
+            <Link to="/public" activeClassName="active">
+              Public Page
+            </Link>
+          </li>
+          <li>
+            <Link to="/protected" activeClassName="active">
+              Protected Page
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="count" element={<Count />} />
-          <Route path="dashboard/*" element={<Dashboard />} />
-          <Route path="dash" element={<Dash />} />
-          <Route path="object_route/*" element={<RouteAsObj />} />
-          <Route path="search" element={<Search />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Home />}></Route> 
+          <Route path="about" element={<About />}></Route> 
+          <Route path="count" element={<Count />}></Route> 
+          <Route path="dashboard/*" element={<Dashboard />}></Route> 
+          <Route path="dash" element={<Dash />}></Route> 
+          <Route path="object_route/*" element={<RouteAsObj />}></Route> 
+          <Route path="search" element={<Search />}></Route> 
+          <Route path="public" element={<PublicPage />}></Route> 
+          <Route
+            path="protected"
+            element={
+              <PrivateRoute>
+                <ProtectedPage x={1} />
+              </PrivateRoute>
+            }
+          ></Route>
+          <Route path="login" element={<LoginPage />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </div>
       {/* <Header />
@@ -72,4 +96,5 @@ const App = () => {
     </div>
   );
 };
+
 export default App;
