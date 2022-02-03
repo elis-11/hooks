@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Link, Route } from "react-router-dom";
 
-export const Dashboard = () => {
+export const Dash = () => {
   return (<div>
-      Dashboard
+      Dash
       <ul>
         <li>
           <Link to="">Profile</Link>

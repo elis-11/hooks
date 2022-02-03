@@ -1,5 +1,6 @@
 import { Routes, Route, NavLink as Link } from "react-router-dom";
 import "./App.scss";
+import { Dash } from "./components/Dash";
 import { Dashboard } from "./components/Dashboard";
 import { About } from "./pages/About";
 import { Count } from "./pages/Count";
@@ -15,10 +16,13 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/" activeClassName="active">Home</Link>
+            <Link to="/" activeClassName="active" end>Home</Link>
           </li>
           <li>
             <Link to="dashboard" activeClassName="active">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="dashboard" activeClassName="active">Dash</Link>
           </li>
           <li>
             <Link to="about" activeClassName="active">About</Link>
@@ -34,6 +38,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/count" element={<Count />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dash" element={<Dash />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
