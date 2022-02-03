@@ -5,7 +5,7 @@ import Invoices, { Invoice } from "./components/Invoices";
 import "./App.scss";
 import { Dash } from "./components/Dash";
 import { Dashboard } from "./components/Dashboard";
-import { About } from "./pages/About";
+import { Todo } from "./pages/Todo";
 import { Count } from "./pages/Count";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
@@ -49,8 +49,8 @@ const App = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about" activeClassName="active">
-              About
+            <Link to="/todo" activeClassName="active">
+              Todo
             </Link>
           </li>
           <li>
@@ -88,7 +88,7 @@ const App = () => {
       <div className="main">
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="about" element={<About />}></Route>
+          <Route path="todo" element={<Todo />}></Route>
           <Route path="count" element={<Count />}></Route>
           <Route path="dashboard/*" element={<Dashboard />}></Route>
           <Route path="dash" element={<Dash />}></Route>

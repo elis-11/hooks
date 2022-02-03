@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
-import  '../App.scss';
+import "../styles/Todo.scss";
 
-export const About = () => {
-  //--style
-  const contentStyle = { color: "white" };
+export const Todo = () => {
 
   const [items, setItems] = useState([
     {
@@ -30,7 +28,7 @@ export const About = () => {
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setItems(listItems);
-    // -- LOCALSTORAGE -- 
+    // -- LOCALSTORAGE --
     localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
@@ -42,8 +40,8 @@ export const About = () => {
 
   return (
     //--style
-    <main style={contentStyle}>
-      {items.length ? (  //empty list 1:33
+    <main>
+      {items.length ? ( //empty list 1:33
         <ul>
           {items.map((item) => (
             <li className="item" key={item.id}>
@@ -68,8 +66,25 @@ export const About = () => {
           ))}
         </ul>
       ) : (
-        <p style={{ marginTop: "2vw" }}>Your list is empty.</p>  //empty list 1:33
+        <p style={{ marginTop: "2vw" }}>Your list is empty.</p> //empty list 1:33
       )}
     </main>
   );
 };
+
+// export const Foother = () => {
+//   const today = new Date();
+//   return (
+//     <foother>
+//       <p>Copyright &copy; {today.getFullYear()}</p>
+//     </foother>
+//   );
+// };
+
+// export const Header = () => {
+//   return (
+//     <header style={{ color: "white" }}>
+//       <h1>Groceries List</h1>
+//     </header>
+//   );
+// };
