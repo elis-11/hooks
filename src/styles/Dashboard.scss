@@ -1,0 +1,17 @@
+.dashboard {
+  .main ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(253, 251, 251);
+    margin: 0;
+    padding: 0;
+  }
+  .main ul li {
+    margin-right: 1rem;
+  }
+
+  .dashboard {
+    padding: 1rem 0;
+  }
+}

@@ -15,6 +15,7 @@ import LoginPage from "./components/auth/LoginPage";
 import PrivateRoute from "./components/auth/PrivateRoute";
 import ProtectedPage from "./components/auth/ProtectedPage";
 import { PublicPage } from "./components/auth/PublicPage";
+import { Java } from "./pages/Java";
 
 //------LOADING-----
 // const Loading = () => {
@@ -31,6 +32,7 @@ const App = () => {
     <div className="App">
       {/* <p>Hello {name}!</p> */}
       {/* <p>Hello World!</p> */}
+      <div className="nav">
       <nav>
         <ul>
           <li>
@@ -83,18 +85,27 @@ const App = () => {
               Invoices
             </Link>
           </li>
+          <li>
+            <Link to="/java" activeClassName="active">
+              Java
+            </Link>
+          </li>
         </ul>
       </nav>
+      </div>
+
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="todo" element={<Todo />}></Route>
-          <Route path="count" element={<Count />}></Route>
-          <Route path="dashboard/*" element={<Dashboard />}></Route>
-          <Route path="dash" element={<Dash />}></Route>
-          <Route path="object_route/*" element={<RouteAsObj />}></Route>
-          <Route path="search" element={<Search />}></Route>
-          <Route path="public" element={<PublicPage />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="todo" element={<Todo />} />
+          <Route path="count" element={<Count />} />
+          <Route path="dashboard/*" element={<Dashboard />} />
+          <Route path="dash" element={<Dash />} />
+          <Route path="object_route/*" element={<RouteAsObj />} />
+          <Route path="search" element={<Search />} />
+          <Route path="public" element={<PublicPage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="java" element={<Java />} />
           <Route
             path="protected"
             element={
@@ -102,16 +113,12 @@ const App = () => {
                 <ProtectedPage x={1} />
               </PrivateRoute>
             }
-          ></Route>
-          <Route path="login" element={<LoginPage />}></Route>
-
+          />
           <Route path="invoices" element={<Invoices />}>
-            <Route
-            index
-            element={<p>Please select an invoice above</p>}></Route>
+            <Route index element={<p>Please select an invoice above</p>} />
             <Route path=":invoiceId" element={<Invoice />} />
           </Route>
-          <Route path="*" element={<NotFound />}></Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       {/* <Header />

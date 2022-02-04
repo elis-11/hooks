@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Routes, Link, Route, useParams, useNavigate } from "react-router-dom";
+import "../styles/Dashboard.scss";
 
 export const Dashboard = () => {
   return (
-    <div>
+    <div className="dashboard">
       Dashboard
       <ul>
         <li>
