@@ -65,6 +65,46 @@
       padding: 0.5rem 0;
     }
   }
+  //-----SCROLLING-----
+  .Scrolling{
+    html{
+      scroll-behavior: smooth;
+    }
+    body {
+      max-width: 900px;
+      margin: 10px auto;
+    }
+    
+    .App {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .section {
+      height: 100vh;
+    }
+    
+    header {
+      display: flex;
+      justify-content: center;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      position: fixed;
+      top: 0;
+      background-color: white;
+    }
+    li a {
+      padding: 1rem;
+      text-decoration: none;
+    }
+    
+  }
+  //------------
   Header {
     width: 100vw;
     height: 3vh;
