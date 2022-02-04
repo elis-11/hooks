@@ -23,6 +23,8 @@ my-app
     
     `
 
+npm i react-icons -D
+
     --FOOTHER.JSX--
     import React from "react";
 

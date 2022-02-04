@@ -40,7 +40,7 @@ export const Todo = () => {
 
   return (
     //--style
-    <main>
+    <div className="todo">
       {items.length ? ( //empty list 1:33
         <ul>
           {items.map((item) => (
@@ -68,7 +68,7 @@ export const Todo = () => {
       ) : (
         <p style={{ marginTop: "2vw" }}>Your list is empty.</p> //empty list 1:33
       )}
-    </main>
+    </div>
   );
 };
 
