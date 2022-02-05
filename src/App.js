@@ -33,7 +33,6 @@ const App = () => {
     <div className="App">
       {/* <p>Hello {name}!</p> */}
       {/* <p>Hello World!</p> */}
-      <div className="nav">
         <nav>
           <ul>
             <li><Link to="/" activeClassName="active" end>Home</Link></li>
@@ -50,7 +49,6 @@ const App = () => {
             <li><Link to="/scrolling" activeClassName="active">Scrolling</Link></li>
           </ul>
         </nav>
-      </div>
 
       <div className="main">
         <Routes>
