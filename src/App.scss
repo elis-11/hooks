@@ -20,102 +20,59 @@
     margin: 0 auto;
     // max-width: 900px;
   }
-  nav {
-    ul {
-      // width: 100vw;
-      display: flex;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-        0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    }
+}
+// .main {
+//   padding: 1rem;
+//   margin: 5vw;
+// }
+.Scrolling {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    max-width: 900px;
+    margin: 10px auto;
+  }
 
-    a {
-      color: rgb(248, 245, 245);
-      // background-color: rgb(190, 187, 187);
-      display: inline-block;
-      padding: 1rem;
-      text-decoration: none;
-    }
-    a.active {
-      color: rgb(161, 154, 154);
-    }
-  }
-  .main {
-    padding: 1rem;
-    margin: 10vw;
-  }
-  //-----ORDERS----
-  .Invoices {
-    ul.orders {
-      flex-direction: column;
-      border: 1px solid;
-      padding: 0.5rem;
-    }
-    .orders li {
-      padding: 0.5rem 0;
-    }
-    ul.invoices {
-      flex-direction: column;
-      border: 1px solid;
-      padding: 0.5rem;
-    }
-    .invoices li {
-      padding: 0.5rem 0;
-    }
-  }
-  //-----SCROLLING-----
-  .Scrolling{
-    html{
-      scroll-behavior: smooth;
-    }
-    body {
-      max-width: 900px;
-      margin: 10px auto;
-    }
-    
-    .App {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .section {
-      height: 100vh;
-    }
-    
-    header {
-      display: flex;
-      justify-content: center;
-    }
-    
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      display: flex;
-      position: fixed;
-      top: 0;
-      background-color: white;
-    }
-    li a {
-      padding: 1rem;
-      text-decoration: none;
-    }
-    
-  }
-  //------------
-  Header {
-    width: 100vw;
-    height: 3vh;
-    // margin: 30vn;
-    // padding: 1vw;
+  .App {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
   }
-  Footer {
-    height: 3vh;
+  .section {
+    height: 100vh;
   }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+  li a {
+    padding: 1rem;
+    text-decoration: none;
+  }
+}
+//------------
+Header {
+  width: 100vw;
+  height: 3vh;
+  // margin: 30vn;
+  // padding: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+Footer {
+  height: 3vh;
 }

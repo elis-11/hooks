@@ -7,7 +7,9 @@ export const Count = () => {
     count
 <div className="todo">
   <ul>
-    <li></li>
+    <li>
+      tralala
+    </li>
   </ul>
 </div>
   </div>)
