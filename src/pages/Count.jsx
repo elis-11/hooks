@@ -1,16 +1,26 @@
 import React from 'react';
-import '../styles/Todo.scss'
+import elis from "../images/favicon.ico";
+
+import '../styles/Count.scss'
 
 
 export const Count = () => {
   return (<div>
     count
-<div className="todo">
+
+<div className="Count">
   <ul>
     <li>
-      tralala
+      Tralala
+    </li>
+    <li>
+      Tralala
+    </li>
+    <li>
+      Tralala
     </li>
   </ul>
+    <img src={elis} alt="logo" className="logo" />
 </div>
   </div>)
 };

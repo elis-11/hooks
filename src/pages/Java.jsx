@@ -1,12 +1,11 @@
-import elis from "../images/favicon.ico";
+// import elis from "../images/favicon.ico";
 import "../styles/Java.scss";
 
 export const Java = () => {
   return (
     <div className="Java">
-      {/* <h1>Tralala</h1> */}
       <div className="card">
-        <img src={elis} alt="logo" className="logo" />
+        {/* <img src={elis} alt="logo" className="logo" /> */}
       </div>
       <div className="content">
         <div className="projects">

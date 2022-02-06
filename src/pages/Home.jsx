@@ -6,7 +6,7 @@ export const Home = () => {
     <div>
       ROUTER 6
       <div className="card">
-        <img src={elis} alt="" />
+        <img src={elis} alt=""  />
       </div>
     </div>
   );

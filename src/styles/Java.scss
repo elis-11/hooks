@@ -1,7 +1,9 @@
 .Java {
-  flex-direction: row;
+  // flex-direction: row;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  // justify-content: space-around;
   // .card {
   //     width: 8vw;
   //   // width: 45%;
