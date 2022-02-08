@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .todo {
-  border: 1px solid rgb(121, 54, 38);
+  // border: 1px solid rgb(121, 54, 38);
   width: 100%;
   height: 90%;
   display: flex;
@@ -16,17 +16,19 @@
     list-style: none;
     background-color: rgb(202, 200, 200);
     display: flex;
+    margin-top: 6vh;
     padding: 0.5vw;
-    border: 3px solid rgb(20, 67, 223);
+    // border: 3px solid rgb(20, 67, 223);
     .item {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 6vh;
+      font-size: 2.5vw;
       padding: 0.5vw;
       margin: 0.5vw;
       background-color: rgb(168, 167, 167);
-      border: 1px solid rgb(89, 121, 38);
+      // border: 1px solid rgb(89, 121, 38);
 
       input[type="checkbox"] {
         text-align: center;
@@ -51,7 +53,7 @@
       }
       svg:focus,
       svg:hover {
-        color: rgb(187, 10, 10);
+        color: rgb(134, 131, 131);
         outline: none;
       }
     }
