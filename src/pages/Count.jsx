@@ -9,18 +9,22 @@ export const Count = () => {
     count
 
 <div className="Count">
+  <div className="container">
   <ul>
     <li>
-      Tralala
+      Tralala 1
     </li>
     <li>
-      Tralala
+      Tralala 2
     </li>
     <li>
-      Tralala
+      Tralala 3
     </li>
   </ul>
+  </div>
+  <div className="container">
     <img src={elis} alt="logo" className="logo" />
+  </div>
 </div>
   </div>)
 };

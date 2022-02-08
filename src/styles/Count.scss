@@ -1,6 +1,15 @@
-.Count{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2vw;
+.Count {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2vw;
+  border: 1px solid;
+  .container {
+    border: 1px solid;
+    width: 50%;
+    ul {
+    //   display: column;
+      border: 1px solid;
+    }
+  }
 }
