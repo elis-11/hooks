@@ -1,5 +1,5 @@
 import React from "react"
-import { fakeAuth } from "./fakeAuth"
+import { Auth } from "./Auth"
 import { useNavigate } from "react-router-dom"
 
 const ProtectedPage = ({ x }) => {
@@ -9,7 +9,7 @@ const ProtectedPage = ({ x }) => {
       <p>You are logged in. Welcome to protected page! Value of x is {x}</p>
       <button
         onClick={() => {
-          fakeAuth.logout(() =>
+          Auth.logout(() =>
             navigate("/login", { state: { from: { pathname: "/protected" } } })
           )
         }}

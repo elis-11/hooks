@@ -6,7 +6,7 @@ import '../styles/Count.scss'
 
 export const Count = () => {
   return (<div>
-    count
+    <h2>COUNT</h2>
 
 <div className="Count">
   <div className="container">

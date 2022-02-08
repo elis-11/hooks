@@ -1,11 +1,11 @@
-export const fakeAuth = {
+export const Auth = {
   isAuthenticated: false,
   login(callBack) {
-    fakeAuth.isAuthenticated = true
+    Auth.isAuthenticated = true
     callBack()
   },
   logout(callBack) {
-    fakeAuth.isAuthenticated = false
+    Auth.isAuthenticated = false
     callBack()
   },
 }

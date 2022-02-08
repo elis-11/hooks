@@ -1,6 +1,6 @@
 import React from "react"
 import { useNavigate, useLocation } from "react-router-dom"
-import { fakeAuth } from "./fakeAuth"
+import { Auth } from "./Auth"
 
 function LoginPage() {
   let navigate = useNavigate()
@@ -8,7 +8,7 @@ function LoginPage() {
 
   let { from } = location.state || { from: { pathname: "/" } }
   let login = () => {
-    fakeAuth.login(() => {
+    Auth.login(() => {
       navigate(from)
     })
   }
