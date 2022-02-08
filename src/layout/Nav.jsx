@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Nav.scss";
 
 export const Nav = () => {
@@ -7,64 +7,64 @@ export const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/" activeClassName="active" end>
+          <NavLink to="/" activeClassName="active" end>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/dashboard" activeClassName="active">
+          <NavLink to="/dashboard" activeClassName="active">
             Dashboard
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/dash" activeClassName="active">
+          <NavLink to="/dash" activeClassName="active">
             Dash
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/todo" activeClassName="active">
+          <NavLink to="/todo" activeClassName="active">
             Todo
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/count" activeClassName="active">
+          <NavLink to="/count" activeClassName="active">
             Count
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/object_route" activeClassName="active">
+          <NavLink to="/object_route" activeClassName="active">
             Route as Object
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/search" activeClassName="active">
+          <NavLink to="/search" activeClassName="active">
             Search
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/public" activeClassName="active">
+          <NavLink to="/public" activeClassName="active">
             Public Page
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/protected" activeClassName="active">
+          <NavLink to="/protected" activeClassName="active">
             Protected Page
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/invoices" activeClassName="active">
+          <NavLink to="/invoices" activeClassName="active">
             Invoices
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/java" activeClassName="active">
+          <NavLink to="/java" activeClassName="active">
             Java
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/scrolling" activeClassName="active">
+          <NavLink to="/scrolling" activeClassName="active">
             Scrolling
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

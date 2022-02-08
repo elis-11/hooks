@@ -2,7 +2,7 @@ import React from "react";
 import { useRoutes, Outlet } from "react-router";
 import { Link } from "react-router-dom";
 
-const RouteAsObj = () => {
+export const RouteAsObj = () => {
   let element = useRoutes([
     { path: "/", element: <Route1 /> },
     { path: "route2", element: <Route2 /> },
@@ -58,4 +58,4 @@ const Child1 = () => <h2>Child1</h2>;
 const Child2 = () => <h2>Child2</h2>;
 const NotFound = () => <h1>NotFound</h1>;
 
-export default RouteAsObj;
+// export default RouteAsObj;
