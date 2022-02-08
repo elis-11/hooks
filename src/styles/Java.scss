@@ -1,15 +1,22 @@
 .Java {
-  // flex-direction: row;
+  // border: 3px solid rgb(202, 18, 18);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  // justify-content: space-around;
-  // .card {
-  //     width: 8vw;
-  //   // width: 45%;
-  //   height: auto;
-  // }
+  width: 100%;
+
+  .card {
+    border: 1px solid rgb(104, 161, 39);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      border: 1px solid rgb(121, 54, 38);
+
+    }
+  }
+
   .content {
-    width: 45%;
+    width: 50%;
+    // border: 1px solid rgb(91, 196, 43);
   }
 }
