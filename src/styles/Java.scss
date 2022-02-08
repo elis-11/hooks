@@ -1,22 +1,28 @@
 .Java {
-  // border: 3px solid rgb(202, 18, 18);
-  display: flex;
-  width: 100%;
-
-  .card {
-    border: 1px solid rgb(104, 161, 39);
-    width: 50%;
+  .container {
+    // border: 3px solid rgb(202, 18, 18);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    img{
-      border: 1px solid rgb(121, 54, 38);
-
+    width: 100%;
+    .card {
+      border: 1px solid rgb(104, 161, 39);
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        border: 1px solid rgb(121, 54, 38);
+      }
     }
-  }
 
-  .content {
-    width: 50%;
-    // border: 1px solid rgb(91, 196, 43);
+    .content {
+      width: 60%;
+      border: 1px solid rgb(91, 196, 43);
+      .form {
+        border: 1px solid rgb(196, 168, 43);
+        .f_sz {
+          font-size: 1.3vw;
+        }
+      }
+    }
   }
 }

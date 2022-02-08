@@ -4,6 +4,8 @@ import "../styles/Java.scss";
 export const Java = () => {
   return (
     <div className="Java">
+      JAVA
+    <div className="container">
       <div className="card">
         <img src={elis} alt="logo" className="logo" />
       </div>
@@ -42,15 +44,15 @@ export const Java = () => {
           <form action="#">
             <label htmlFor="name">
               <h4>Name</h4>
-              <input type="text" id="name" placeholder="Enter your name" />
+              <input className="f_sz" type="text" id="name" placeholder="Enter your name" />
             </label>
             <label htmlFor="email">
               <h4>Email</h4>
-              <input type="text" id="email" placeholder="Enter your email" />
+              <input className="f_sz" type="text" id="email" placeholder="Enter your email" />
             </label>
             <label htmlFor="password">
               <h4>Password</h4>
-              <input
+              <input className="f_sz"
                 type="text"
                 id="password"
                 placeholder="Enter your password"
@@ -63,11 +65,12 @@ export const Java = () => {
               </textarea>
             </label>
             <div className="submit-button">
-              <input id="submit-button" type="submit" value="Send Message" />
+              <input className="f_sz" id="submit-button" type="submit" value="Send Message" />
             </div>
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 };
