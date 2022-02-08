@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Invoices, { Invoice } from "./components/Invoices";
 import "./App.scss";
 import { Dash } from "./components/Dash";
-import { Dashboard } from "./components/Dashboard";
+import {Dashboard} from "./components/Dashboard";
 import { Todo } from "./pages/Todo";
 import { Count } from "./pages/Count";
 import { Home } from "./pages/Home";
@@ -25,6 +25,7 @@ import { Nav } from "./layout/Nav";
 // };
 
 // const Dashboard = loadable(() => import("./Dashboard.jsx"), {
+// Dashboard = loadable(() => import("./components/Dashboard.jsx"), {
 //   fallback: <Loading />,
 // });
 //  LOADING-END-----
