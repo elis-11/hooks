@@ -7,62 +7,99 @@ export const Nav = () => {
     <nav>
       <ul>
         <li>
-          <NavLink to="/" activeClassName="active" end>
+          <NavLink
+            to="/"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+            end
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/dashboard" activeClassName="active">
+          <NavLink
+            to="/dashboard"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Dashboard
           </NavLink>
         </li>
         <li>
-          <NavLink to="/dash" activeClassName="active">
+          <NavLink
+            to="/dash"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Dash
           </NavLink>
         </li>
         <li>
-          <NavLink to="/todo" activeClassName="active">
+          <NavLink
+            to="/todo"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Todo
           </NavLink>
         </li>
         <li>
-          <NavLink to="/count" activeClassName="active">
+          <NavLink
+            to="/count"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Count
           </NavLink>
         </li>
         <li>
-          <NavLink to="/object_route" activeClassName="active">
+          <NavLink
+            to="/object_route"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Route as Object
           </NavLink>
         </li>
         <li>
-          <NavLink to="/search" activeClassName="active">
+          <NavLink
+            to="/search"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Search
           </NavLink>
         </li>
         <li>
-          <NavLink to="/public" activeClassName="active">
+          <NavLink
+            to="/public"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Public Page
           </NavLink>
         </li>
         <li>
-          <NavLink to="/protected" activeClassName="active">
+          <NavLink
+            to="/protected"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Protected Page
           </NavLink>
         </li>
         <li>
-          <NavLink to="/invoices" activeClassName="active">
+          <NavLink
+            to="/invoices"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Invoices
           </NavLink>
         </li>
         <li>
-          <NavLink to="/java" activeClassName="active">
+          <NavLink
+            to="/java"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Java
           </NavLink>
         </li>
         <li>
-          <NavLink to="/scrolling" activeClassName="active">
+          <NavLink
+            to="/scrolling"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
             Scrolling
           </NavLink>
         </li>
