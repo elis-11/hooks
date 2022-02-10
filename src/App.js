@@ -30,13 +30,8 @@ import { Nav } from "./layout/Nav";
 // });
 //  LOADING-END-----
 const App = () => {
-  // const name = 'Dave'
   return (
     <div className="App">
-      {/* <p>Hello {name}!</p> */}
-      {/* <p>Hello World!</p> */}
-
-      <div className="main">
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -64,7 +59,6 @@ const App = () => {
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
       {/* <Header />
       <Content />
       <Foother /> */}
