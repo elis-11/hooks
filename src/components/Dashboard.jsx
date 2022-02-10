@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Routes, Link, Route, useParams, useNavigate } from "react-router-dom";
+import { Routes, Link, Route } from "react-router-dom";
+import { Profile } from "./auth/Profile";
+import { Orders } from "./auth/Orders";
+import { OrderDetails } from "./auth/OrderDetails"
 import "../styles/Dashboard.scss";
 
 export const Dashboard = () => {
@@ -29,49 +32,6 @@ export const Dashboard = () => {
     </div>
   );
 };
-export const Profile = () => {
-  return <h2>Profile</h2>;
-};
-export const Orders = () => {
-  const orderIds = ["1", "2", "3", "4", "5"];
-  return (
-    <>
-      <h2>Orders</h2>
-      <ul className="orders">
-        {/* Loop through the orders array and display link to order details */}
-        {orderIds.map((orderId) => {
-          return (
-            <li key={orderId}>
-              <Link to={`/dashboard/order_details/${orderId}`}>
-                View Order {orderId}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </>
-  );
-};
 export const Quotes = () => {
   return <h2>Quotes</h2>;
-};
-
-export const OrderDetails = () => {
-  const params = useParams();
-  const navigate = useNavigate();
-
-  const onBackClick = (e) => {
-    e.preventDefault();
-    // navigate(-1);
-    navigate("/dashboard/orders");
-  };
-
-  return (
-    <>
-      <h2>Details of order {params.orderId}</h2>
-      <a href="#" onClick={onBackClick}>
-        Back to Orders
-      </a>
-    </>
-  );
 };
