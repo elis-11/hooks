@@ -1,0 +1,57 @@
+
+	.todoEdComp {
+		margin: 0 10px 10px 0;
+		background: #777;
+		width: 310px;
+		padding: 15px;
+		border-radius: 5px;
+		form {
+			input[type="radio"] {
+				width: 15px;
+				height: 15px;
+				top: -2px;
+				left: -1px;
+				position: relative;
+				border: 2px solid blue;
+			}
+			label {
+				font-size: 1.6rem;
+				margin: 0 15px 0 0;
+			}
+			span {
+				color: rgb(247, 247, 140);
+				font-size: .8rem;
+				position: relative;
+				top: -3px;
+			}
+			button.clearButton {
+				outline: none;
+				border: none;
+				top: -3px;
+				left: 16px;
+				position: relative;
+				color: #333;
+				background-color: #888;
+			}
+			.inputArea {
+				margin: 5px 0 0 0;
+				input[type="text"] {
+					margin: 0 5px 0 0;
+					font-size: 1.2rem;
+					width: 200px;
+				}
+				button {
+					font-size: 1.2rem;
+				}
+			}
+		}
+		.todoList {
+			background: #222;
+			margin: 10px 0 0 0;
+			padding: 10px;
+			width: 286px;
+			height: 200px;
+			font-size: 1.3rem;
+			overflow: auto;
+		}
+	}

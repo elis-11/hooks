@@ -56,6 +56,4 @@ const Route3 = () => {
 };
 const Child1 = () => <h2>Child1</h2>;
 const Child2 = () => <h2>Child2</h2>;
-const NotFound = () => <h1>NotFound</h1>;
-
-// export default RouteAsObj;
+const NotFound = () => <h1>404 NotFound</h1>;
