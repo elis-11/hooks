@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { Content } from "./Content";
 import { Footer } from "./Footer";
 import "../../styles/Todo.scss";
+import { AddItem } from "./AddItem";
 
 export const Todo = () => {
   const [items, setItems] = useState([
@@ -40,6 +41,7 @@ export const Todo = () => {
   return (
     <div className="Todo">
       <Header title="Grocery List" />
+      <AddItem />
       <Content
         items={items}
         handleCheck={handleCheck}
