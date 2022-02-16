@@ -45,7 +45,7 @@ export const Todo = () => {
         handleCheck={handleCheck}
         handleDelete={handleDelete}
       />
-      <Footer length={items.length}/>
+      <Footer length={items.length} />
     </div>
   );
 };
