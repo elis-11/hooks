@@ -5,7 +5,6 @@ import Invoices, { Invoice } from "./components/Invoices";
 import "./App.scss";
 import { Dash } from "./components/Dash";
 import { Dashboard } from "./components/Dashboard";
-import { Todo } from "./pages/Todo";
 import { Count } from "./pages/Count";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
@@ -19,6 +18,7 @@ import { Java } from "./pages/Java";
 import { Scrolling } from "./pages/Scrolling";
 import { Nav } from "./layout/Nav";
 import { TodoEdPage } from "./components/todoed/TodoEdPage";
+import { Todo } from "./components/todo/Todo";
 
 //------LOADING-----
 // const Loading = () => {
