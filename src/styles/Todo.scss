@@ -10,7 +10,7 @@
   align-items: center;
   text-align: center;
 
-  header{
+  header {
     height: 4vh;
     display: flex;
     justify-content: center;
@@ -23,14 +23,14 @@
     display: flex;
     justify-content: center;
     ul {
-      width: 70vw;
+      width: 60vw;
       justify-content: center;
       flex-direction: column;
       list-style: none;
-      background-color: rgb(202, 200, 200);
+      // background-color: rgb(202, 200, 200);
       display: flex;
       margin-top: 6vh;
-      padding: 0.5vw;
+      // padding: 0.5vw;
       // border: 3px solid rgb(20, 67, 223);
       .item {
         display: flex;
@@ -39,7 +39,7 @@
         height: 6vh;
         font-size: 2.5vw;
         padding: 0.5vw;
-        margin: 0.5vw;
+        margin: 0.2vw;
         background-color: rgb(168, 167, 167);
         // border: 1px solid rgb(89, 121, 38);
 
@@ -72,7 +72,7 @@
       }
     }
   }
-  footer{
+  footer {
     height: 4vh;
   }
 }
