@@ -23,14 +23,17 @@
     align-items: center;
     flex-direction: column;
     // border: 3px solid rgb(20, 67, 223);
-
+    
     .container {
+      height: 5vh;
+      font-size: 2.5vw;
+      padding: 1vw;
       display: flex;
-      width: 64vw;
+      width: 60vw;
       justify-content: center;
       list-style: none;
       margin-top: 1vh;
-      // border: 1px solid rgb(223, 180, 169);
+      background-color: rgb(168, 167, 167);
 
       label {
         position: absolute;
@@ -38,20 +41,15 @@
       }
       input[type="text"] {
         flex-grow: 1;
-        max-width: calc(100% - 50px);
-        min-height: 48px;
         font-size: 1rem;
-        outline: none;
+        // outline: none;
+        width: 50vw;
         background-color: rgb(168, 167, 167);
       }
       button {
-        height: 48px;
-        min-width: 48px;
-        padding: 0.25rem;
         font-size: 1rem;
         // background-color: rgb(12, 102, 180);
         background-color: rgb(168, 167, 167);
-        color: aquamarine;
         color: rgb(245, 245, 248);
         cursor: pointer;
       }
@@ -61,6 +59,20 @@
         background-color: rgb(243, 236, 236);
         outline: none;
       }
+      svg {
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        color: rgb(245, 245, 248);
+        cursor: pointer;
+      }
+      svg:focus,
+      svg:hover {
+        color: rgb(134, 131, 131);
+        outline: none;
+      }
+
     }
   }
   .Add {
@@ -75,7 +87,6 @@
       justify-content: center;
       list-style: none;
       margin-top: 3vh;
-      // border: 1px solid rgb(223, 180, 169);
 
       label {
         position: absolute;
@@ -84,7 +95,7 @@
       input[type="text"] {
         flex-grow: 1;
         max-width: calc(100% - 50px);
-        min-height: 48px;
+        // min-height: 48px;
         font-size: 1rem;
         outline: none;
         background-color: rgb(168, 167, 167);
@@ -92,11 +103,10 @@
       button {
         height: 48px;
         min-width: 48px;
-        padding: 0.25rem;
+        // padding: 0.25rem;
         font-size: 1rem;
         // background-color: rgb(12, 102, 180);
         background-color: rgb(168, 167, 167);
-        color: aquamarine;
         color: rgb(245, 245, 248);
         cursor: pointer;
       }

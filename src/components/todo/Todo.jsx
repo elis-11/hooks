@@ -40,7 +40,7 @@ export const Todo = () => {
     e.preventDefault();
     if (!newItem) return;
     addItem(newItem);
-    setNewItem("");
+    setNewItem("");  
   };
 
   return (

@@ -1,4 +1,5 @@
 import "../../styles/Todo.scss";
+import {FaSearch} from "react-icons/fa"
 
 export const SearchItem = ({search, setSearch}) => {
   return (
@@ -13,6 +14,7 @@ export const SearchItem = ({search, setSearch}) => {
       value={search}
       onChange={(e) => setSearch(e.target.value)}
       />
+      <FaSearch />
       </div>
     </form>
   );
