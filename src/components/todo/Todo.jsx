@@ -6,18 +6,7 @@ import "../../styles/Todo.scss";
 import { AddItem } from "./AddItem";
 
 export const Todo = () => {
-  const [items, setItems] = useState([
-    {
-      id: 1,
-      checked: false,
-      item: "Item 1",
-    },
-    {
-      id: 2,
-      checked: false,
-      item: "Item 2",
-    },
-  ]);
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem("todolist")));
   const [newItem, setNewItem] = useState("");
 
   const setAndSaveItems = (newItems) => {
@@ -27,7 +16,7 @@ export const Todo = () => {
   };
 
   const addItem = (item) => {
-    const id = items.length ? items[items.length - 1].id : 1;
+    const id = items.length ? items[items.length - 1].id +1 : 1;
     const myNewItem = { id, checked: false, item };
     const listItems = [...items, myNewItem];
     setAndSaveItems(listItems);
