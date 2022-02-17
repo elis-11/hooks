@@ -18,8 +18,52 @@
     align-items: center;
     text-align: center;
   }
+  .Search {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // border: 3px solid rgb(20, 67, 223);
 
-  .addForm {
+    .container {
+      display: flex;
+      width: 64vw;
+      justify-content: center;
+      list-style: none;
+      margin-top: 1vh;
+      // border: 1px solid rgb(223, 180, 169);
+
+      label {
+        position: absolute;
+        left: -999999px;
+      }
+      input[type="text"] {
+        flex-grow: 1;
+        max-width: calc(100% - 50px);
+        min-height: 48px;
+        font-size: 1rem;
+        outline: none;
+        background-color: rgb(168, 167, 167);
+      }
+      button {
+        height: 48px;
+        min-width: 48px;
+        padding: 0.25rem;
+        font-size: 1rem;
+        // background-color: rgb(12, 102, 180);
+        background-color: rgb(168, 167, 167);
+        color: aquamarine;
+        color: rgb(245, 245, 248);
+        cursor: pointer;
+      }
+      button:focus,
+      button:hover {
+        color: rgb(168, 167, 167);
+        background-color: rgb(243, 236, 236);
+        outline: none;
+      }
+    }
+  }
+  .Add {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -30,7 +74,7 @@
       width: 60vw;
       justify-content: center;
       list-style: none;
-      margin-top: 6vh;
+      margin-top: 3vh;
       // border: 1px solid rgb(223, 180, 169);
 
       label {
@@ -78,7 +122,7 @@
       list-style: none;
       // background-color: rgb(202, 200, 200);
       display: flex;
-      margin-top: 6vh;
+      margin-top: 3vh;
       // padding: 0.5vw;
       // border: 3px solid rgb(20, 67, 223);
       .item {

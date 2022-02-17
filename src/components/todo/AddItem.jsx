@@ -3,7 +3,7 @@ import "../../styles/Todo.scss";
 
 export const AddItem = ({newItem, setNewItem, handleSubmit}) => {
   return (
-    <form className="addForm" onSubmit={handleSubmit}>
+    <form className="Add" onSubmit={handleSubmit}>
       <div className="container">
         <label htmlFor="addItem">Add Item</label>
         <input
