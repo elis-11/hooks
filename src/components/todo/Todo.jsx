@@ -7,9 +7,11 @@ import { AddItem } from "./AddItem";
 import { SearchItem } from "./SearchItem";
 
 export const Todo = () => {
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem("todolist")));
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem("todolist"))
+  );
   const [newItem, setNewItem] = useState("");
-  const [search, setSearch]= useState("")
+  const [search, setSearch] = useState("");
 
   const setAndSaveItems = (newItems) => {
     // -- LOCALSTORAGE --
@@ -18,7 +20,7 @@ export const Todo = () => {
   };
 
   const addItem = (item) => {
-    const id = items.length ? items[items.length - 1].id +1 : 1;
+    const id = items.length ? items[items.length - 1].id + 1 : 1;
     const myNewItem = { id, checked: false, item };
     const listItems = [...items, myNewItem];
     setAndSaveItems(listItems);
@@ -40,27 +42,27 @@ export const Todo = () => {
     e.preventDefault();
     if (!newItem) return;
     addItem(newItem);
-    setNewItem("");  
+    setNewItem("");
   };
 
   return (
     <div className="Todo">
       <Header title="Grocery List" />
-      <AddItem
-        newItem={newItem}
-        setNewItem={setNewItem}
-        handleSubmit={handleSubmit}
-      />
-      <SearchItem
-      search={search}
-      setSearch={setSearch}
-      />
-      <Content
-        items={items.filter(item =>((item.item.toLowerCase()).includes
-          (search.toLowerCase())))}
-        handleCheck={handleCheck}
-        handleDelete={handleDelete}
-      />
+      <div className="content">
+        <AddItem
+          newItem={newItem}
+          setNewItem={setNewItem}
+          handleSubmit={handleSubmit}
+        />
+        <SearchItem search={search} setSearch={setSearch} />
+        <Content
+          items={items.filter((item) =>
+            item.item.toLowerCase().includes(search.toLowerCase())
+          )}
+          handleCheck={handleCheck}
+          handleDelete={handleDelete}
+        />
+      </div>
       <Footer length={items.length} />
     </div>
   );

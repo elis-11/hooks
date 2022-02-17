@@ -2,9 +2,8 @@
   box-sizing: border-box;
 }
 .Todo {
-  // border: 1px solid rgb(121, 54, 38);
   width: 100%;
-  height: 80vh;
+  height: 90%;
   display: column;
   flex-direction: column;
   justify-content: center;
@@ -12,12 +11,57 @@
   text-align: center;
 
   header {
-    height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 4vh;
   }
+  .content{
+    height: 94%;
+    .Add {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      // border: 3px solid rgb(20, 67, 223);
+  
+      .container {
+        display: flex;
+        width: 60vw;
+        justify-content: center;
+        list-style: none;
+        margin-top: 3vh;
+  
+        label {
+          position: absolute;
+          left: -999999px;
+        }
+        input[type="text"] {
+          flex-grow: 1;
+          max-width: calc(100% - 50px);
+          // min-height: 48px;
+          font-size: 1rem;
+          outline: none;
+          background-color: rgb(168, 167, 167);
+        }
+        button {
+          height: 48px;
+          min-width: 48px;
+          // padding: 0.25rem;
+          font-size: 1rem;
+          // background-color: rgb(12, 102, 180);
+          background-color: rgb(168, 167, 167);
+          color: rgb(245, 245, 248);
+          cursor: pointer;
+        }
+        button:focus,
+        button:hover {
+          color: rgb(168, 167, 167);
+          background-color: rgb(243, 236, 236);
+          outline: none;
+        }
+      }
+    }  
   .Search {
     display: flex;
     align-items: center;
@@ -25,24 +69,24 @@
     // border: 3px solid rgb(20, 67, 223);
     
     .container {
+      width: 60vw;
       height: 5vh;
       font-size: 2.5vw;
       padding: 1vw;
       display: flex;
-      width: 60vw;
       justify-content: center;
       list-style: none;
       margin-top: 1vh;
       background-color: rgb(168, 167, 167);
 
       label {
-        position: absolute;
-        left: -999999px;
+        position: right;
+        right: inherit;
       }
       input[type="text"] {
         flex-grow: 1;
         font-size: 1rem;
-        // outline: none;
+        outline: none;
         width: 50vw;
         background-color: rgb(168, 167, 167);
       }
@@ -75,66 +119,19 @@
 
     }
   }
-  .Add {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    // border: 3px solid rgb(20, 67, 223);
-
-    .container {
-      display: flex;
-      width: 60vw;
-      justify-content: center;
-      list-style: none;
-      margin-top: 3vh;
-
-      label {
-        position: absolute;
-        left: -999999px;
-      }
-      input[type="text"] {
-        flex-grow: 1;
-        max-width: calc(100% - 50px);
-        // min-height: 48px;
-        font-size: 1rem;
-        outline: none;
-        background-color: rgb(168, 167, 167);
-      }
-      button {
-        height: 48px;
-        min-width: 48px;
-        // padding: 0.25rem;
-        font-size: 1rem;
-        // background-color: rgb(12, 102, 180);
-        background-color: rgb(168, 167, 167);
-        color: rgb(245, 245, 248);
-        cursor: pointer;
-      }
-      button:focus,
-      button:hover {
-        color: rgb(168, 167, 167);
-        background-color: rgb(243, 236, 236);
-        outline: none;
-      }
-    }
-  }
-
   main {
     height: 80vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    // border: 3px solid rgb(20, 67, 223);
     ul {
       width: 60vw;
       justify-content: center;
       flex-direction: column;
       list-style: none;
-      // background-color: rgb(202, 200, 200);
       display: flex;
       margin-top: 3vh;
       // padding: 0.5vw;
-      // border: 3px solid rgb(20, 67, 223);
       .item {
         display: flex;
         justify-content: center;
@@ -144,7 +141,6 @@
         padding: 0.5vw;
         margin: 0.2vw;
         background-color: rgb(168, 167, 167);
-        // border: 1px solid rgb(89, 121, 38);
 
         input[type="checkbox"] {
           text-align: center;
@@ -175,6 +171,7 @@
       }
     }
   }
+}
   footer {
     height: 4vh;
   }
