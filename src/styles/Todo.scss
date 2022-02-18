@@ -71,7 +71,7 @@
     .container {
       width: 60vw;
       height: 5vh;
-      font-size: 2.5vw;
+      font-size: 14px;
       padding: 1vw;
       display: flex;
       justify-content: center;
@@ -85,8 +85,10 @@
       }
       input[type="text"] {
         flex-grow: 1;
-        font-size: 1rem;
-        outline: none;
+        // font-size: 1rem;
+      font-size: 14px;
+
+        // outline: none;
         width: 50vw;
         background-color: rgb(168, 167, 167);
       }
@@ -137,7 +139,9 @@
         justify-content: center;
         align-items: center;
         height: 6vh;
-        font-size: 2.5vw;
+        // font-size: 2.5vw;
+      font-size: 18px;
+
         padding: 0.5vw;
         margin: 0.2vw;
         background-color: rgb(168, 167, 167);

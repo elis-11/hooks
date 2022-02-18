@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Invoices, { Invoice } from "./components/Invoices";
 import "./App.scss";
-import { Dash } from "./components/Dash";
+import { Dash } from "./components/dash/Dash";
 import { Dashboard } from "./components/Dashboard";
 import { Count } from "./pages/Count";
 import { Home } from "./pages/Home";
