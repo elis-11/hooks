@@ -46,3 +46,19 @@ export const Header = () => {
     </header>
   );
 };
+
+# https://edwardtanguay.netlify.app/howtos?id=491
+# https://edwardtanguay.netlify.app/howtos?id=498
+# https://edwardtanguay.netlify.app/howtos?id=496
+# https://edwardtanguay.netlify.app/howtos?id=494
+# https://thispersondoesnotexist.com/
+# https://frontend-online-shop.netlify.app/
+# https://online-shop-plants.herokuapp.com/
+# https://www.remove.bg/de
+# https://onespace.netlify.app/howtos?id=435
+- Ammar-Bakar-send-email
+# https://www.youtube.com/watch?v=dG_ETBR8viE
+# https://www.youtube.com/watch?v=Law7wfdg_ls&t=122s
+- todoEd
+# https://github.com/edwardtanguay/todolist-react-multiple-components
+# 

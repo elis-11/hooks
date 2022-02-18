@@ -1,7 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useRef, useEffect } from 'react';
+import './TodoList.scss';
 
-export const TodoEdComp = ({ idCode }) => {
+export const TodoList = ({ idCode }) => {
 	const [area, setArea] = useState('home');
 	const [todo, setTodo] = useState('');
 	const [todoList, setTodoList] = useState([]);
@@ -44,7 +45,7 @@ export const TodoEdComp = ({ idCode }) => {
 	}
 
 	return (
-		<div className="todoEdComp">
+		<div className="todoListComp">
 			<form>
 				<input id={addPrefix('home')} type="radio" name="area" value="home" checked={area === "home"} onChange={(e) => handleAreaChange(e)} />
 				<label htmlFor={addPrefix('home')}>Home</label>

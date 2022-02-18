@@ -17,7 +17,7 @@ import { PublicPage } from "./components/auth/PublicPage";
 import { Java } from "./pages/Java";
 import { Scrolling } from "./pages/Scrolling";
 import { Nav } from "./layout/Nav";
-import { TodoEdPage } from "./components/todoed/TodoEdPage";
+import { TodoEd } from "./components/todoed/TodoEd";
 import { Todo } from "./components/todo/Todo";
 
 //------LOADING-----
@@ -37,7 +37,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="todo" element={<Todo />} />
-        <Route path="todoepage" element={<TodoEdPage />} />
+        <Route path="todoed" element={<TodoEd />} />
         <Route path="count" element={<Count />} />
         <Route path="dashboard/*" element={<Dashboard />} />
         <Route path="dash/*" element={<Dash />} />
@@ -61,9 +61,6 @@ const App = () => {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {/* <Header />
-      <Content />
-      <Foother /> */}
     </div>
   );
 };

@@ -41,7 +41,7 @@ export const Nav = () => {
         </li>
         <li>
           <NavLink
-            to="/todoedpage"
+            to="/todoed"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >
             TodoEd
