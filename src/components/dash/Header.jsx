@@ -1,11 +1,20 @@
-import React from 'react'
+import { useState } from "react";
 import './Dash.scss';
 
 
 export const Header = () => {
+  const [name, setName] = useState("Elis");
+  const handleNameChange = () => {
+    const names = ["Rob", "Elis", "Fred"];
+    const int = Math.floor(Math.random() * names.length);
+    setName(names[int]);
+  };
+  const handleClick = () => {};
+
   return (
 <header>
-  <h2>Todo List</h2>
+  <p onDoubleClick={handleClick}>Hello {name}!</p>
+      <button onClick={handleNameChange}>Change Name</button>
 </header>
     )
 }

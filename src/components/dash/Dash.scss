@@ -13,32 +13,12 @@
     height: 2%;
   }
   main {
-      height: 92%;
-      color: rgb(235, 225, 225);
-      margin-top: 10px;
-      .Content {
-          color: rgb(204, 204, 204);
-          margin-top: 2px;
-          ul {
-          display: column;
-          justify-content: center;
-          align-items: center;
-        width: 50%;
-        height: 10%;
-
-        li {
-          margin-top: 2px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border: 1px solid grey;
-          svg:focus,
-          svg:hover{
-            color: gray;
-            outline: none;
-          }
-        }
-      }
+    height: 92%;
+    color: rgb(235, 225, 225);
+    margin-top: 10px;
+    .Content {
+      color: rgb(204, 204, 204);
+      margin-top: 40px;
     }
   }
   footer {
