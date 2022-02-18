@@ -1,4 +1,4 @@
-import "../../styles/Todo.scss";
+import "./Todo.scss";
 
 export const Footer = ({length}) => {
   const today = new Date();

@@ -1,5 +1,5 @@
 import { LineItem } from "./LineItem";
-import "../../styles/Todo.scss";
+import "./Todo.scss";
 
 
 export const ItemList = ({ items, handleCheck, handleDelete }) => {

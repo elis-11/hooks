@@ -1,5 +1,5 @@
 import { FaTrashAlt } from "react-icons/fa";
-import "../../styles/Todo.scss";
+import "./Todo.scss";
 
 
 export const LineItem = ({ item, handleCheck, handleDelete }) => {

@@ -1,4 +1,4 @@
-import "../../styles/Todo.scss";
+import "./Todo.scss";
 
 // export const Header = ( props ) => {
 export const Header = ( {title} ) => {

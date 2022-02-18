@@ -1,5 +1,5 @@
 import { ItemList } from "./ItemList";
-import "../../styles/Todo.scss";
+import "./Todo.scss";
 
 export const Content = ({ items, handleCheck, handleDelete }) => {
   return (

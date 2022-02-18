@@ -19,13 +19,14 @@
   }
   .content {
     height: 94%;
+
     .Add {
       display: flex;
       align-items: center;
       flex-direction: column;
       // border: 3px solid rgb(20, 67, 223);
 
-      .container {
+      .add-cont {
         display: flex;
         width: 60vw;
         justify-content: center;
@@ -69,7 +70,7 @@
       flex-direction: column;
       // border: 3px solid rgb(20, 67, 223);
 
-      .container {
+      .search-cont {
         // width: 60vw;
         height: 5vh;
         font-size: 14px;
