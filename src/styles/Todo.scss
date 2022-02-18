@@ -17,31 +17,32 @@
     text-align: center;
     height: 4vh;
   }
-  .content{
+  .content {
     height: 94%;
     .Add {
       display: flex;
       align-items: center;
       flex-direction: column;
       // border: 3px solid rgb(20, 67, 223);
-  
+
       .container {
         display: flex;
         width: 60vw;
         justify-content: center;
         list-style: none;
         margin-top: 3vh;
-  
+
         label {
           position: absolute;
-          left: -999999px;
+          // left: -999999px;
         }
         input[type="text"] {
           flex-grow: 1;
+          min-height: 48px;
           max-width: calc(100% - 50px);
-          // min-height: 48px;
-          font-size: 1rem;
+          font-size: 18px;
           outline: none;
+        color: rgb(104, 103, 103);
           background-color: rgb(168, 167, 167);
         }
         button {
@@ -61,107 +62,52 @@
           outline: none;
         }
       }
-    }  
-  .Search {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    // border: 3px solid rgb(20, 67, 223);
-    
-    .container {
-      width: 60vw;
-      height: 5vh;
-      font-size: 14px;
-      padding: 1vw;
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      margin-top: 1vh;
-      background-color: rgb(168, 167, 167);
-
-      label {
-        position: right;
-        right: inherit;
-      }
-      input[type="text"] {
-        flex-grow: 1;
-        // font-size: 1rem;
-      font-size: 14px;
-
-        // outline: none;
-        width: 50vw;
-        background-color: rgb(168, 167, 167);
-      }
-      button {
-        font-size: 1rem;
-        // background-color: rgb(12, 102, 180);
-        background-color: rgb(168, 167, 167);
-        color: rgb(245, 245, 248);
-        cursor: pointer;
-      }
-      button:focus,
-      button:hover {
-        color: rgb(168, 167, 167);
-        background-color: rgb(243, 236, 236);
-        outline: none;
-      }
-      svg {
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-        color: rgb(245, 245, 248);
-        cursor: pointer;
-      }
-      svg:focus,
-      svg:hover {
-        color: rgb(134, 131, 131);
-        outline: none;
-      }
-
     }
-  }
-  main {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    ul {
-      width: 60vw;
-      justify-content: center;
-      flex-direction: column;
-      list-style: none;
+    .Search {
       display: flex;
-      margin-top: 3vh;
-      // padding: 0.5vw;
-      .item {
+      align-items: center;
+      flex-direction: column;
+      // border: 3px solid rgb(20, 67, 223);
+
+      .container {
+        // width: 60vw;
+        height: 5vh;
+        font-size: 14px;
+        padding: 1vw;
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 6vh;
-        // font-size: 2.5vw;
-      font-size: 18px;
+        list-style: none;
+        margin-top: 1vh;
 
-        padding: 0.5vw;
-        margin: 0.2vw;
-        background-color: rgb(168, 167, 167);
-
-        input[type="checkbox"] {
-          text-align: center;
-          width: 5vw;
-          height: 2vh;
-          cursor: pointer;
-          margin: 0.5vw;
-          color: #000;
-        }
-        input[type="checkbox"]:focus + label {
-          text-decoration: underline;
-        }
         label {
-          font-size: 2 vw;
+          position: right;
+          right: inherit;
+        }
+        input {
           flex-grow: 1;
+          font-size: 18px;
+          outline: none;
+          width: 60vw;
+          height: 5vh;
+          color: rgb(104, 103, 103);
+          background-color: rgb(168, 167, 167);
+        }
+        button {
+          font-size: 1rem;
+          // background-color: rgb(12, 102, 180);
+          background-color: rgb(168, 167, 167);
+          color: rgb(245, 245, 248);
+          cursor: pointer;
+        }
+        button:focus,
+        button:hover {
+          color: rgb(168, 167, 167);
+          background-color: rgb(243, 236, 236);
+          outline: none;
         }
         svg {
+          justify-content: center;
+          align-items: center;
           width: 20px;
           height: 20px;
           color: rgb(245, 245, 248);
@@ -174,8 +120,61 @@
         }
       }
     }
+    main {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      ul {
+        width: 60vw;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        display: flex;
+        margin-top: 3vh;
+        // padding: 0.5vw;
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 6vh;
+          // font-size: 2.5vw;
+          font-size: 18px;
+
+          padding: 0.5vw;
+          margin: 0.2vw;
+          background-color: rgb(168, 167, 167);
+
+          input[type="checkbox"] {
+            text-align: center;
+            width: 5vw;
+            height: 2vh;
+            cursor: pointer;
+            margin: 0.5vw;
+            color: #000;
+          }
+          input[type="checkbox"]:focus + label {
+            text-decoration: underline;
+          }
+          label {
+            font-size: 2 vw;
+            flex-grow: 1;
+          }
+          svg {
+            width: 20px;
+            height: 20px;
+            color: rgb(245, 245, 248);
+            cursor: pointer;
+          }
+          svg:focus,
+          svg:hover {
+            color: rgb(134, 131, 131);
+            outline: none;
+          }
+        }
+      }
+    }
   }
-}
   footer {
     height: 4vh;
   }
