@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Header } from "./Header";
 import { Content } from "./Content";
 import { Footer } from "./Footer";
-import "./Todo.scss";
 import { AddItem } from "./AddItem";
 import { SearchItem } from "./SearchItem";
+import "./Todo.scss";
 
 export const Todo = () => {
   const [items, setItems] = useState(
