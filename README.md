@@ -68,3 +68,40 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Structure
+
+```
+hooks
+│ 
+│─── public
+└─── src
+│     │
+│     └─── custom (everything that is specific to this website)
+│     │     │
+│     │     │─── components
+│     │     │─── data
+│     │     │     └─── readmes
+│     │     │           │
+│     │     │           │─── ideas.md
+│     │     │           │─── notes.md
+│     │     │           │─── site_documentation.md
+│     │     │           └─── todo.md
+│     │     │─── models
+│     │     └─── styles
+│     └─── datapod ("Datapod" is my name for the underlying framework, everything that is needed for any website)
+│           │
+│           │─── classes
+│           │─── components
+│           │─── fileTemplates
+│           │─── qtools
+│           └─── styles
+│─── .env
+│─── .gitignore
+│─── package.json
+└─── README.md
+
+
+```
