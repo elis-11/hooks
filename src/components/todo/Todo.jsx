@@ -7,14 +7,15 @@ import { SearchItem } from "./SearchItem";
 import "./Todo.scss";
 
 export const Todo = () => {
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem
-    ("todolist")) || []);
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem("todolist")) || []
+  );
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
 
-useEffect(()=> {
-  localStorage.setItem("todolist", JSON.stringify(items));
-}, [items])
+  useEffect(() => {
+    localStorage.setItem("todolist", JSON.stringify(items));
+  }, [items]);
 
   const addItem = (item) => {
     const id = items.length ? items[items.length - 1].id + 1 : 1;
