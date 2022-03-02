@@ -1,21 +1,7 @@
 import "./Todo.scss";
 
-export const SearchItem = ({search, setSearch}) => {
+export const SearchItem = () => {
   return (
-    <form className="Search" onSubmit={(e) => e.preventDefault()}>
-        <div className="search-cont">
-      <label htmlFor="search">
-       
-      </label>
-      <input 
-      id="search"
-      type="text"
-      role="searchbox"
-      placeholder="SEARCH"
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
-      />
-      </div>
-    </form>
-  );
-};
+    <div>SearchItem</div>
+  )
+}
