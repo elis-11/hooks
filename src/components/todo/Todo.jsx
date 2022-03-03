@@ -11,7 +11,6 @@ export const Todo = () => {
     <div className="Todo">
       <Header title="Grocery List" />
       <div className="content">
-        hello
         <Content />
       </div>
       <Footer />
