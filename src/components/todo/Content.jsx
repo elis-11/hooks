@@ -17,12 +17,13 @@ export const Content = () => {
     },
   ]);
 
+  //! 1:36
   const handleCheck = (id) => {
     const listItems = items.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setItems(listItems);
-    localStorage.setItem("Todo", JSON.stringify(listItems)); //! 1:27
+    localStorage.setItem("Todo", JSON.stringify(listItems));
   };
   const handleDelete = (id) => {
     const listItems = items.filter((item) => item.id !== id);
