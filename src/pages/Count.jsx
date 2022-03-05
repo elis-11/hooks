@@ -21,6 +21,10 @@ export const Count = () => {
       Tralala 3
     </li>
   </ul>
+  <div className="input">
+  <input type="text" className='i-1'/>
+  <button>Push</button>
+  </div>
   </div>
   <div className="container">
     <img src={elis} alt="logo" className="logo" />
