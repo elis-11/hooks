@@ -41,6 +41,14 @@ export const Nav = () => {
         </li>
         <li>
           <NavLink
+            to="/course"
+            className={(navData) => (navData.isActive ? "active" : "none")}
+          >
+            Course
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/todoed"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >

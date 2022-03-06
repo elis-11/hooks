@@ -10,6 +10,7 @@ import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { RouteAsObj } from "./components/RouteAsObj";
 import { Search } from "./components/Search";
+import { Course } from "./components/course/Course";
 import LoginPage from "./components/auth/LoginPage";
 import PrivateRoute from "./components/auth/PrivateRoute";
 import ProtectedPage from "./components/auth/ProtectedPage";
@@ -36,11 +37,12 @@ const App = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="dashboard/*" element={<Dashboard />} />
+        <Route path="dash/*" element={<Dash />} />
         <Route path="todo" element={<Todo />} />
         <Route path="todoed/*" element={<TodoEd />} />
         <Route path="count" element={<Count />} />
-        <Route path="dashboard/*" element={<Dashboard />} />
-        <Route path="dash/*" element={<Dash />} />
+        <Route path="course/*" element={<Course />} />
         <Route path="object_route/*" element={<RouteAsObj />} />
         <Route path="search" element={<Search />} />
         <Route path="public" element={<PublicPage />} />
