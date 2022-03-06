@@ -7,19 +7,7 @@ import { SearchItem } from "./SearchItem";
 import "./Todo.scss";
 
 export const Todo = () => {
-  const [items, setItems] = useState([
-    {
-      id: 1,
-      checked: false,
-      list: "Todo",
-    },
-    {
-      id: 2,
-      checked: true,
-      list: "Done",
-    },
-  ]);
-
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('Todo')));
   const [newItem, setNewItem] = useState("");
 
   const setAndSaveItems = (newItems) => {
@@ -27,9 +15,9 @@ export const Todo = () => {
     localStorage.setItem("Todo", JSON.stringify(newItems));
   };
 
-  const addItem = (item) => {
+  const addItem = (list) => {
     const id = items.length ? items[items.length - 1].id + 1 : 1;
-    const myNewItem = { id, checked: false, item };
+    const myNewItem = { id, checked: false, list };
     const listItems = [...items, myNewItem];
     setAndSaveItems(listItems);
   };
