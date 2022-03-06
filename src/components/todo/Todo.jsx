@@ -1,11 +1,10 @@
-// import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Header } from "./Header";
 import { Content } from "./Content";
 import { Footer } from "./Footer";
-// import { AddItem } from "./AddItem";
+import { AddItem } from "./AddItem";
 // import { SearchItem } from "./SearchItem";
 import "./Todo.scss";
-import { useState } from "react";
 
 export const Todo = () => {
   const [items, setItems] = useState([
@@ -20,7 +19,6 @@ export const Todo = () => {
       list: "Done",
     },
   ]);
-  //! 1:36
   const handleCheck = (id) => {
     const listItems = items.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
@@ -38,6 +36,7 @@ export const Todo = () => {
     <div className="Todo">
       <Header title="Grocery List" />
       <div className="content">
+        <AddItem />
         <Content
           items={items}
           handleCheck={handleCheck}

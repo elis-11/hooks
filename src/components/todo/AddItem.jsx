@@ -1,33 +1,22 @@
-import { FaTrashAlt } from "react-icons/fa";
-
 import "./Todo.scss";
+import { FaPlus } from "react-icons/fa";
 
-export const AddItem = ({ items, handleCheck, handleDelete }) => {
+export const AddItem = () => {
   return (
-    <div>
-      <ul>
-        {items.map((item) => (
-          <li className="item" key={item.id}>
-            <input
-              type="checkbox"
-              onChange={() => handleCheck(item.id)}
-              checked={item.checked}
-            />
-            <label
-              // style={(item.checked) ? {textDecoration: 'line-through'} :null}
-              onDoubleClick={() => handleCheck(item.id)}
-            >
-              {item.list}
-            </label>
-            {/* <button>x</button> */}
-            <FaTrashAlt
-              onClick={() => handleDelete(item.id)}
-              role="button"
-              tabIndex="0"
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <form className="Add">
+      <div className="add-cont">
+      <label htmlFor="addItem"></label>
+      <input
+        autoFocus
+        id="addItem"
+        type="text"
+        placeholder="Add Item"
+        required
+        />
+      <button type="submit" aria-label="Add Item">
+        <FaPlus />
+      </button>
+        </div>
+    </form>
   );
 };
