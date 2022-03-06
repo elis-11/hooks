@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Link, Route } from "react-router-dom";
 import { First } from "./First";
-import { Color } from "./Color";
+import { Color } from "./color/Color";
 import './Course.scss'
 
 export const Course = () => {

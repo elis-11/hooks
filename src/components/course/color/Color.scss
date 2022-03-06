@@ -1,0 +1,32 @@
+.Color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 3%;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+
+  }
+  input {
+      width: 250px;
+      height: 40px;
+      border-radius: 7px;
+      color: rgb(29, 28, 28);
+      text-align: center;
+    }
+    button{
+    margin: 10px;
+    width: 250px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+}
