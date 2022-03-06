@@ -7,8 +7,9 @@ import { SearchItem } from "./SearchItem";
 import "./Todo.scss";
 
 export const Todo = () => {
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem('Todo')));
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem("Todo")));
   const [newItem, setNewItem] = useState("");
+  const [search, setSearch] = useState("");
 
   const setAndSaveItems = (newItems) => {
     setItems(newItems);
@@ -49,9 +50,11 @@ export const Todo = () => {
           setNewitem={setNewItem}
           handleSubmit={handleSubmit}
         />
-        <SearchItem />
+        <SearchItem search={search} setSearch={setSearch} />
         <Content
-          items={items}
+          items={items.filter((item) =>
+            item.list.toLowerCase().includes(search.toLowerCase())
+          )}
           handleCheck={handleCheck}
           handleDelete={handleDelete}
         />
