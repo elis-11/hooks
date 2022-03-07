@@ -4,34 +4,15 @@ TODO:
 
 ---
 
+---
 elis@11:~/webs/hooks$ npx json-server -p 3500 -w data/db.json
 ---
+- 
+### https://jsonplaceholder.typicode.com/
 
---HEADER.JSX--
-```
-
-import React from "react";
-
-export const Header = () => {
-  return (
-    <header style={{ color: "white" }}>
-      <h1>Groceries List</h1>
-    </header>
-  );
-};
-
---FOOTHER.JSX--
-    import React from "react";
-
-export const Foother = () => {
-  const today = new Date();
-  return (
-    <foother>
-      <p>Copyright &copy; {today.getFullYear()}</p>
-    </foother>
-  );
-};
-```
+---
+### color
+- npm i colornames -S
 
 ---
 ### https://edwardtanguay.netlify.app/howtos?id=491

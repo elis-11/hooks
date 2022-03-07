@@ -19,11 +19,6 @@
       "id": 5,
       "checked": true,
       "list": "Cookies"
-    },
-    {
-      "id": 7,
-      "checked": false,
-      "list": "state"
     }
   ]
 }
