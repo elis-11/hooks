@@ -4,6 +4,9 @@ TODO:
 
 ---
 
+elis@11:~/webs/hooks$ npx json-server -p 3500 -w data/db.json
+---
+
 --HEADER.JSX--
 ```
 
