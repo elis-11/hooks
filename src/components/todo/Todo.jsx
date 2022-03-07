@@ -27,7 +27,9 @@ export const Todo = () => {
         setFetchError(err.message);
       }
     };
-    (async () => await fetchItems())();
+    setTimeout(() => {
+      (async () => await fetchItems())();
+    }, 2000);
   }, []);
 
   const addItem = (list) => {
