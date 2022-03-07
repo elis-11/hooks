@@ -1,14 +1,29 @@
 {
-    "items": [
-        {
-            "id": 1,
-            "checked": false,
-            "list": "Todo"
-        },
-        {
-            "id": 2,
-            "checked": false,
-            "list": "Done"
-        }
-    ]
+  "items": [
+    {
+      "id": 1,
+      "checked": true,
+      "list": "Todo"
+    },
+    {
+      "id": 2,
+      "checked": false,
+      "list": "Done"
+    },
+    {
+      "id": 3,
+      "checked": true,
+      "list": "Doing"
+    },
+    {
+      "id": 5,
+      "checked": true,
+      "list": "Cookies"
+    },
+    {
+      "id": 7,
+      "checked": false,
+      "list": "state"
+    }
+  ]
 }

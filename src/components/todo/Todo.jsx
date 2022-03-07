@@ -4,6 +4,7 @@ import { Content } from "./Content";
 import { Footer } from "./Footer";
 import { AddItem } from "./AddItem";
 import { SearchItem } from "./SearchItem";
+import apiRequest from "./apiRequest";
 import "./Todo.scss";
 
 export const Todo = () => {
@@ -13,7 +14,7 @@ export const Todo = () => {
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
   const [fetchError, setFetchError] = useState(null);
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -25,8 +26,8 @@ export const Todo = () => {
         setFetchError(null);
       } catch (err) {
         setFetchError(err.message);
-      } finally{
-        setIsLoading(false)
+      } finally {
+        setIsLoading(false);
       }
     };
     setTimeout(() => {
@@ -34,22 +35,50 @@ export const Todo = () => {
     }, 2000);
   }, []);
 
-  const addItem = (list) => {
+  const addItem = async (list) => {
     const id = items.length ? items[items.length - 1].id + 1 : 1;
     const myNewItem = { id, checked: false, list };
     const listItems = [...items, myNewItem];
     setItems(listItems);
+
+    const postOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(myNewItem),
+    };
+    const result = await apiRequest(API_URL, postOptions);
+    if (result) setFetchError(result);
   };
 
-  const handleCheck = (id) => {
+  const handleCheck = async (id) => {
     const listItems = items.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setItems(listItems);
+
+    const myItem = listItems.filter((item) => item.id === id);
+    const updateOptions = {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ checked: myItem[0].checked }),
+    };
+    const reqUrl = `${API_URL}/${id}`;
+    const result = await apiRequest(reqUrl, updateOptions);
+    if (result) setFetchError(result);
   };
-  const handleDelete = (id) => {
+
+  const handleDelete = async (id) => {
     const listItems = items.filter((item) => item.id !== id);
     setItems(listItems);
+
+    const deleteOptions= {method: 'DELETE'}
+    const reqUrl = `${API_URL}/${id}`;
+    const result = await apiRequest(reqUrl, deleteOptions);
+    if (result) setFetchError(result);
   };
 
   const handleSubmit = (e) => {
@@ -70,15 +99,21 @@ export const Todo = () => {
         />
         <SearchItem search={search} setSearch={setSearch} />
         <main>
-          {isLoading && <p style={{margin: '40px'}}>Loading...</p>}
-          {fetchError && <p style={{color: 'red', margin: '40px'}}>{`Error: ${fetchError}`}</p>}
-          {!fetchError && !isLoading && <Content
-            items={items.filter((item) =>
-              item.list.toLowerCase().includes(search.toLowerCase())
-            )}
-            handleCheck={handleCheck}
-            handleDelete={handleDelete}
-          />}
+          {isLoading && <p style={{ margin: "40px" }}>Loading...</p>}
+          {fetchError && (
+            <p
+              style={{ color: "red", margin: "40px" }}
+            >{`Error: ${fetchError}`}</p>
+          )}
+          {!fetchError && !isLoading && (
+            <Content
+              items={items.filter((item) =>
+                item.list.toLowerCase().includes(search.toLowerCase())
+              )}
+              handleCheck={handleCheck}
+              handleDelete={handleDelete}
+            />
+          )}
         </main>
       </div>
       <Footer length={items.length} />
