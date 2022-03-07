@@ -4,10 +4,10 @@ import "./TodoList.scss";
 
 const persons = ["person001", "person002", "person003", "person004"];
 
-export const TodoEd = () => {
+export const Todos = () => {
   return (
     <div className="container">
-      <div className="TodoEd">
+      <div className="Todos">
         {persons.map((m) => (
           <TodoList idCode={m} key={m} />
         ))}

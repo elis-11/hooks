@@ -18,7 +18,7 @@ import { PublicPage } from "./components/auth/PublicPage";
 import { Java } from "./pages/Java";
 import { Scrolling } from "./pages/Scrolling";
 import { Nav } from "./layout/Nav";
-import { TodoEd } from "./components/todoed/TodoEd";
+import { Todos } from "./components/todos/Todos";
 import { Todo } from "./components/todo/Todo";
 
 //------LOADING-----
@@ -40,7 +40,7 @@ const App = () => {
         <Route path="dashboard/*" element={<Dashboard />} />
         <Route path="dash/*" element={<Dash />} />
         <Route path="todo" element={<Todo />} />
-        <Route path="todoed/*" element={<TodoEd />} />
+        <Route path="todos/*" element={<Todos />} />
         <Route path="count" element={<Count />} />
         <Route path="course/*" element={<Course />} />
         <Route path="object_route/*" element={<RouteAsObj />} />
