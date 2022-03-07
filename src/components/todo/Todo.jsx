@@ -13,6 +13,7 @@ export const Todo = () => {
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
   const [fetchError, setFetchError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -20,11 +21,12 @@ export const Todo = () => {
         const response = await fetch(API_URL);
         if (!response.ok) throw Error("Did not receive expected data");
         const listItems = await response.json();
-        console.log(listItems);
         setItems(listItems);
         setFetchError(null);
       } catch (err) {
         setFetchError(err.message);
+      } finally{
+        setIsLoading(false)
       }
     };
     setTimeout(() => {
@@ -68,8 +70,9 @@ export const Todo = () => {
         />
         <SearchItem search={search} setSearch={setSearch} />
         <main>
+          {isLoading && <p style={{margin: '40px'}}>Loading...</p>}
           {fetchError && <p style={{color: 'red', margin: '40px'}}>{`Error: ${fetchError}`}</p>}
-          {!fetchError && <Content
+          {!fetchError && !isLoading && <Content
             items={items.filter((item) =>
               item.list.toLowerCase().includes(search.toLowerCase())
             )}
