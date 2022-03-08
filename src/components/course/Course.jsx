@@ -11,7 +11,6 @@ export const Course = () => {
   return (
     <div className="Course">
         <div className="course-comp">
-      Course
       <ul>
         <li>
           <Link to="">First</Link>

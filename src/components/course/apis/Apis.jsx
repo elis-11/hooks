@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Form } from "./Form";
-import {List} from "./List";
+// import {List} from "./List";
+import {Table} from "./Table";
+import './Apis.scss';
+
 
 export const Apis = () => {
   const API_URL = "https://jsonplaceholder.typicode.com/";
@@ -24,7 +27,8 @@ export const Apis = () => {
   return (
     <div className="Apis">
       <Form reqType={reqType} setReqType={setReqType} />
-      <List items={items} />
+      {/* <List items={items} /> */}
+      <Table items={items} />
     </div>
   );
 };

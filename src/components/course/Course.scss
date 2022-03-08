@@ -2,12 +2,15 @@
   .course-comp {
     ul {
       li {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         a {
-          text-decoration: none;
-          color: rgb(247, 247, 247);
+            text-decoration: none;
+            :active{
+              color: rgb(110, 146, 96);
+            }
+          color: rgb(105, 105, 105);
         }
       }
     }
