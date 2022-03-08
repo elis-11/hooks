@@ -103,14 +103,14 @@ export const Nav = () => {
             Invoices
           </NavLink>
         </li>
-        {/* <li>
+        <li>
           <NavLink
             to="/scrolling"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >
             Scrolling
           </NavLink>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );

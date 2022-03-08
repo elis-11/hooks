@@ -16,7 +16,7 @@ import PrivateRoute from "./components/auth/PrivateRoute";
 import ProtectedPage from "./components/auth/ProtectedPage";
 import { PublicPage } from "./components/auth/PublicPage";
 import { Java } from "./components/course/java/Java";
-// import { Scrolling } from "./pages/Scrolling";
+import { Scrolling } from "./pages/Scrolling";
 import { Nav } from "./layout/Nav";
 import { Todos } from "./components/todos/Todos";
 // import { Todo } from "./components/todo/Todo";
@@ -59,7 +59,7 @@ const App = () => {
         <Route path="invoices" element={<Invoices />}>
           <Route index element={<p>Please select an invoice above</p>} />
           <Route path=":invoiceId" element={<Invoice />} />
-          {/* <Route path="scrolling" element={<Scrolling />} /> */}
+          <Route path="scrolling" element={<Scrolling />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
