@@ -18,8 +18,7 @@ import { PublicPage } from "./components/auth/PublicPage";
 import { Java } from "./components/course/java/Java";
 import { Scrolling } from "./pages/Scrolling";
 import { Nav } from "./layout/Nav";
-import { Todos } from "./components/todos/Todos";
-// import { Todo } from "./components/todo/Todo";
+import { Todo } from "./components/todo/Todo";
 
 //------LOADING-----
 // const Loading = () => {
@@ -39,8 +38,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="dashboard/*" element={<Dashboard />} />
         <Route path="dash/*" element={<Dash />} />
-        {/* <Route path="todo" element={<Todo />} /> */}
-        <Route path="todos/*" element={<Todos />} />
+        <Route path="todo" element={<Todo />} />
         <Route path="count" element={<Count />} />
         <Route path="course/*" element={<Course />} />
         <Route path="object_route/*" element={<RouteAsObj />} />

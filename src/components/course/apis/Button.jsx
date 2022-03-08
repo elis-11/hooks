@@ -1,3 +1,4 @@
+import './Apis.scss';
 
 export const Button = ({buttonText, reqType, setReqType}) => {
   return (

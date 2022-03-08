@@ -18,6 +18,17 @@
     .content {
       width: 60%;
       border: 1px solid rgb(91, 196, 43);
+      .projects {
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+        padding-top: 30px;
+      }
+      .link {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 30px;
+      }
       .form {
         border: 1px solid rgb(196, 168, 43);
         .f_sz {

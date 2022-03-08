@@ -1,10 +1,19 @@
-.Apis{
-    button{
-        width: 33%;
-        padding: 0.5rem;
-        .selected{
-            background-color: rgb(218, 162, 162);
-            padding: 0 2rem 1rem;
-        }
+.Apis {
+  color: #000;
+  button {
+    width: 33%;
+    // margin-top: 20px;
+    padding: 0.5rem;
+    .selected {
+      background-color: rgb(218, 162, 162);
+      padding: 0 2rem 1rem;
     }
+  }
+  ul {
+      list-style: circle;
+    color: grey;
+    li{
+        list-style: circle
+    }
+  }
 }

@@ -31,20 +31,12 @@ export const Nav = () => {
             Dash
           </NavLink>
         </li>
-        {/* <li>
+        <li>
           <NavLink
             to="/todo"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >
             Todo
-          </NavLink>
-        </li> */}
-        <li>
-          <NavLink
-            to="/todos"
-            className={(navData) => (navData.isActive ? "active" : "none")}
-          >
-            Todos
           </NavLink>
         </li>
         <li>

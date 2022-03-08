@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Form } from "./Form";
+import {List} from "./List";
 
 export const Apis = () => {
   const API_URL = "https://jsonplaceholder.typicode.com/";
   const [reqType, setReqType] = useState("users");
-  // const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     
@@ -12,8 +13,7 @@ export const Apis = () => {
       try {
         const response = await fetch(`${API_URL}${reqType}`);
         const data = await response.json();
-        console.log(data);
-        // setItems(data);
+        setItems(data);
       } catch (err) {
         console.log(err);
       }
@@ -24,6 +24,7 @@ export const Apis = () => {
   return (
     <div className="Apis">
       <Form reqType={reqType} setReqType={setReqType} />
+      <List items={items} />
     </div>
   );
 };
