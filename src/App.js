@@ -15,11 +15,11 @@ import LoginPage from "./components/auth/LoginPage";
 import PrivateRoute from "./components/auth/PrivateRoute";
 import ProtectedPage from "./components/auth/ProtectedPage";
 import { PublicPage } from "./components/auth/PublicPage";
-import { Java } from "./pages/Java";
-import { Scrolling } from "./pages/Scrolling";
+// import { Java } from "./pages/Java";
+// import { Scrolling } from "./pages/Scrolling";
 import { Nav } from "./layout/Nav";
 import { Todos } from "./components/todos/Todos";
-import { Todo } from "./components/todo/Todo";
+// import { Todo } from "./components/todo/Todo";
 
 //------LOADING-----
 // const Loading = () => {
@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="dashboard/*" element={<Dashboard />} />
         <Route path="dash/*" element={<Dash />} />
-        <Route path="todo" element={<Todo />} />
+        {/* <Route path="todo" element={<Todo />} /> */}
         <Route path="todos/*" element={<Todos />} />
         <Route path="count" element={<Count />} />
         <Route path="course/*" element={<Course />} />
@@ -47,7 +47,7 @@ const App = () => {
         <Route path="search" element={<Search />} />
         <Route path="public" element={<PublicPage />} />
         <Route path="login" element={<LoginPage />} />
-        <Route path="java" element={<Java />} />
+        {/* <Route path="java" element={<Java />} /> */}
         <Route
           path="protected"
           element={
@@ -59,7 +59,7 @@ const App = () => {
         <Route path="invoices" element={<Invoices />}>
           <Route index element={<p>Please select an invoice above</p>} />
           <Route path=":invoiceId" element={<Invoice />} />
-          <Route path="scrolling" element={<Scrolling />} />
+          {/* <Route path="scrolling" element={<Scrolling />} /> */}
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

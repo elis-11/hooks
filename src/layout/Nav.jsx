@@ -31,14 +31,14 @@ export const Nav = () => {
             Dash
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/todo"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >
             Todo
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             to="/todos"
@@ -103,22 +103,22 @@ export const Nav = () => {
             Invoices
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/java"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >
             Java
           </NavLink>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <NavLink
             to="/scrolling"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >
             Scrolling
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
