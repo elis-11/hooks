@@ -8,7 +8,7 @@ hooks
 │─── public
 └─── src
 │     │
-│     └─── custom (everything that is specific to this website)
+│     └─── custom 
 │     │     │
 │     │     │─── components
 │     │     │─── data
@@ -20,7 +20,7 @@ hooks
 │     │     │           └─── todo.md
 │     │     │─── models
 │     │     └─── styles
-│     └─── datapod ("Datapod" is my name for the underlying framework, everything that is needed for any website)
+│     └─── datapod
 │           │
 │           │─── classes
 │           │─── components

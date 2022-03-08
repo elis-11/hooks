@@ -15,7 +15,7 @@ import LoginPage from "./components/auth/LoginPage";
 import PrivateRoute from "./components/auth/PrivateRoute";
 import ProtectedPage from "./components/auth/ProtectedPage";
 import { PublicPage } from "./components/auth/PublicPage";
-// import { Java } from "./pages/Java";
+import { Java } from "./components/course/java/Java";
 // import { Scrolling } from "./pages/Scrolling";
 import { Nav } from "./layout/Nav";
 import { Todos } from "./components/todos/Todos";
@@ -47,7 +47,7 @@ const App = () => {
         <Route path="search" element={<Search />} />
         <Route path="public" element={<PublicPage />} />
         <Route path="login" element={<LoginPage />} />
-        {/* <Route path="java" element={<Java />} /> */}
+        <Route path="java" element={<Java />} />
         <Route
           path="protected"
           element={

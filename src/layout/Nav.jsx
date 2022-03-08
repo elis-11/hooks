@@ -105,14 +105,6 @@ export const Nav = () => {
         </li>
         {/* <li>
           <NavLink
-            to="/java"
-            className={(navData) => (navData.isActive ? "active" : "none")}
-          >
-            Java
-          </NavLink>
-        </li> */}
-        {/* <li>
-          <NavLink
             to="/scrolling"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >

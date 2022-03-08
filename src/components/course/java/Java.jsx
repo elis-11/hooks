@@ -1,5 +1,6 @@
-import elis from "../images/favicon.ico";
-import "../styles/Java.scss";
+// import elis from "../images/favicon.ico";
+import elis from "../../../images/favicon.ico"
+import "./Java.scss";
 
 export const Java = () => {
   return (
@@ -60,9 +61,7 @@ export const Java = () => {
             </label>
             <label htmlFor="message">
               <h4>Message</h4>
-              <textarea type="text" id="message">
-                Your Message
-              </textarea>
+              <textarea type="text" id="message" />
             </label>
             <div className="submit-button">
               <input className="f_sz" id="submit-button" type="submit" value="Send Message" />

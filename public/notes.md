@@ -30,6 +30,9 @@ elis@11:~/webs/hooks$ npx json-server -p 3500 -w data/db.json
 - todoEd
 ### https://github.com/edwardtanguay/todolist-react-multiple-components
 
+- my-deleted-site
+### https://elis-react-site.netlify.app/
+
 
 ```
 my-app
