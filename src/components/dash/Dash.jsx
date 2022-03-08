@@ -4,7 +4,6 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 
 export const Dash = () => {
-
   return (
     <div className="Dash">
       <Header />
