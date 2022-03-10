@@ -7,7 +7,6 @@ import { Dash } from "./components/dash/Dash";
 import { Dashboard } from "./components/Dashboard";
 import { Count } from "./pages/Count";
 import { Home } from "./pages/Home";
-import { NotFound } from "./pages/NotFound";
 import { RouteAsObj } from "./components/RouteAsObj";
 import { Search } from "./components/Search";
 import { Course } from "./components/course/Course";
@@ -19,6 +18,7 @@ import { Java } from "./components/course/java/Java";
 import { Scrolling } from "./pages/Scrolling";
 import { Nav } from "./layout/Nav";
 import { Todo } from "./components/todo/Todo";
+import { NotFound } from "./pages/NotFound";
 
 //------LOADING-----
 // const Loading = () => {

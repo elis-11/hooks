@@ -1,13 +1,13 @@
 TODO:
  https://www.youtube.com/watch?v=RVFAyFWO4go&list=LL&index=108&t=1033s
+
+ ---
+
 ### npm i react-icons
-
 ---
-
+- elis@11:~/webs/hooks$ npx json-server -p 3500 -w data/db.json
 ---
-elis@11:~/webs/hooks$ npx json-server -p 3500 -w data/db.json
----
-- 
+- jsonplaceholder
 ### https://jsonplaceholder.typicode.com/
 
 ---
@@ -33,6 +33,15 @@ elis@11:~/webs/hooks$ npx json-server -p 3500 -w data/db.json
 - my-deleted-site
 ### https://elis-react-site.netlify.app/
 
+---
+
+- React Router Dom 6
+### https://www.codingdeft.com/posts/react-router-tutorial/
+
+- source code
+### https://github.com/collegewap/react-router-tutorial
+
+---
 
 ```
 my-app
