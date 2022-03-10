@@ -57,8 +57,8 @@ const App = () => {
         <Route path="invoices" element={<Invoices />}>
           <Route index element={<p>Please select an invoice above</p>} />
           <Route path=":invoiceId" element={<Invoice />} />
-          <Route path="scrolling" element={<Scrolling />} />
         </Route>
+        <Route path="scrolling" element={<Scrolling />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
