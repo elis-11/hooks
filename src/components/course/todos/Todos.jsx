@@ -2,7 +2,7 @@ import React from "react";
 import { TodoList } from "./TodoList";
 import "./TodoList.scss";
 
-const persons = ["person001", "person002", "person003", "person004"];
+const persons = ["person1", "person2", "person3", "person4"];
 
 export const Todos = () => {
   return (

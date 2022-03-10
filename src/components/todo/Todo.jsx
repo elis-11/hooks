@@ -9,6 +9,7 @@ import "./Todo.scss";
 
 export const Todo = () => {
   const API_URL = "http://localhost:3500/items";
+  // const API_URL = "https://jsonplaceholder.typicode.com/todos/1";
 
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState("");

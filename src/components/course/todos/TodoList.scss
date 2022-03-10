@@ -1,14 +1,22 @@
 .container {
 	display: flex;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 20px;
+	margin: 10px;
+	border: 1px solid red;
   
 	.Todos {
 		margin: 0 10px 10px 0;
+		margin: 20px;
 		background: rgb(196, 195, 195);
 		width: 310px;
 		padding: 15px;
 		border-radius: 5px;
+		.todoListComp{
+		// border: 1px solid rgb(69, 122, 44);
+		margin: 10px;
+
 		form {
 			input[type="radio"] {
 				width: 15px;
@@ -17,6 +25,8 @@
 				left: -1px;
 				position: relative;
 				border: 2px solid blue;
+	border: 1px solid red;
+
 			}
 			label {
 				font-size: 1.6rem;
@@ -53,10 +63,11 @@
 			background: rgb(158, 158, 158);
 			margin: 10px 0 0 0;
 			padding: 10px;
-			width: 286px;
+			// width: 286px;
 			height: 200px;
 			font-size: 1.3rem;
 			overflow: auto;
 		}
+}
 }
 }
