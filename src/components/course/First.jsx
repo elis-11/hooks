@@ -15,7 +15,7 @@ export const First = () => {
     <div className="First">
       <h2>First</h2>
 
-      <h3 className="Date">Is is {new Date().toLocaleTimeString()}.</h3>
+      <h3 className="Date">It is {new Date().toLocaleTimeString()}.</h3>
 
       <form onSubmit={handleSubmit}>
         <button type="submit">Submit</button>

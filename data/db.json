@@ -6,16 +6,6 @@
       "list": "Todo"
     },
     {
-      "id": 2,
-      "checked": false,
-      "list": "Done"
-    },
-    {
-      "id": 3,
-      "checked": true,
-      "list": "Doing"
-    },
-    {
       "id": 5,
       "checked": true,
       "list": "Cookies"

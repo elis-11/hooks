@@ -78,6 +78,10 @@ my-app
 - alias gm='git commit -m "Modified doc."'
 - alias gpc='git commit -m "Polished comment."'
 - alias gp='git push'
+- alias gpl='git pull'
 - alias gs='git status'
 - alias gl='git log'
+- alias giy='git init -y'
 - alias gb='git branch'
+- alias gcb='git checkout -b'
+```
