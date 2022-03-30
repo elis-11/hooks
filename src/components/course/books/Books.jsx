@@ -1,7 +1,6 @@
 import { useState, useEffect} from "react";
 import { FaEdit } from "react-icons/fa";
 import { FaTrashAlt } from "react-icons/fa";
-
 import "./Books.scss";
 
 export const Books = () => {
@@ -30,14 +29,20 @@ export const Books = () => {
       setBooks([
         ...books,
         {
-          //   id: new Date(),
-          id: books.length + 1,
+            id: new Date(),
+        //   id: books.length + 1,
           text: book.trim(),
         },
       ]);
     }
     setBook("");
   };
+  const handleDeleteClick =(id)=>{
+      const removeItem= books.filter((book) =>{
+          return book.id !== id
+      })
+      setBooks(removeItem)
+  }
 
   return (
     <div className="Books">
@@ -62,7 +67,7 @@ export const Books = () => {
               <div>{book.author}</div>
               <div className="icons">
                 <FaEdit className="icon" role="button" tabIndex="0" />
-                <FaTrashAlt className="icon" role="button" tabIndex="0" />
+                <FaTrashAlt className="icon" onClick={() => handleDeleteClick(book.id)} role="button" tabIndex="0" />
               </div>
             </div>
           ))}
@@ -72,3 +77,4 @@ export const Books = () => {
     </div>
   );
 };
+//! done 3
