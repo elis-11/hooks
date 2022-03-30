@@ -70,7 +70,7 @@ my-app
 ```
 ---
 - code .bashrc
-# ELISA'S SETTINGS !!!
+### ELISA'S SETTINGS !!!
 - alias ga='git add .'
 - alias gc='git commit -m'
 - alias gu='git commit -m "Update doc."'
@@ -85,3 +85,5 @@ my-app
 - alias gb='git branch'
 - alias gcb='git checkout -b'
 ```
+- Books- Link
+### https://dev.to/joelynn/build-a-react-crud-todo-app-add-read-todos-1l8a
