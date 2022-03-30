@@ -1,12 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import { FaEdit } from "react-icons/fa";
 import { FaTrashAlt } from "react-icons/fa";
 
 import "./Books.scss";
 
 export const Books = () => {
-  const [books, setBooks] = useState([]);
+  const [books, setBooks] = useState(() => {
+    const savedBooks = localStorage.getItem("books");
+    if (savedBooks) {
+      return JSON.parse(savedBooks);
+    } else {
+      return [];
+    }
+  });
   const [book, setBook] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("books", JSON.stringify(books));
+  }, [books]);
 
   const handleInputChange = (e) => {
     setBook(e.target.value);
@@ -19,6 +30,7 @@ export const Books = () => {
       setBooks([
         ...books,
         {
+          //   id: new Date(),
           id: books.length + 1,
           text: book.trim(),
         },
