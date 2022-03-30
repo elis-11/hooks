@@ -1,73 +1,70 @@
 .container {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	padding: 20px;
-	margin: 10px;
-	border: 1px solid red;
-  
-	.Todos {
-		margin: 0 10px 10px 0;
-		margin: 20px;
-		background: rgb(196, 195, 195);
-		width: 310px;
-		padding: 15px;
-		border-radius: 5px;
-		.todoListComp{
-		// border: 1px solid rgb(69, 122, 44);
-		margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+  // border: 1px solid red;
 
-		form {
-			input[type="radio"] {
-				width: 15px;
-				height: 15px;
-				top: -2px;
-				left: -1px;
-				position: relative;
-				border: 2px solid blue;
-	border: 1px solid red;
+  .Todos {
+    margin: 0 10px 10px 0;
+    margin: 20px;
+    background: rgb(196, 195, 195);
+    width: 310px;
+    padding: 15px;
+    border-radius: 5px;
+    .todoListComp {
+      // border: 1px solid rgb(69, 122, 44);
+      margin: 10px;
 
-			}
-			label {
-				font-size: 1.6rem;
-				margin: 0 15px 0 0;
-			}
-			span {
-				color: rgb(129, 129, 128);
-				font-size: .8rem;
-				position: relative;
-				top: -3px;
-			}
-			button.clearButton {
-				outline: none;
-				border: none;
-				top: -3px;
-				left: 16px;
-				position: relative;
-				color: #333;
-				background-color: #888;
-			}
-			.inputArea {
-				margin: 5px 0 0 0;
-				input[type="text"] {
-					margin: 0 5px 0 0;
-					font-size: 1.2rem;
-					width: 200px;
-				}
-				button {
-					font-size: 1.2rem;
-				}
-			}
-		}
-		.todoList {
-			background: rgb(158, 158, 158);
-			margin: 10px 0 0 0;
-			padding: 10px;
-			// width: 286px;
-			height: 200px;
-			font-size: 1.3rem;
-			overflow: auto;
-		}
-}
-}
+      form {
+        input[type="radio"] {
+          width: 15px;
+          height: 15px;
+          top: -2px;
+          left: -1px;
+          position: relative;
+        }
+        label {
+          font-size: 1.6rem;
+          margin: 0 15px 0 0;
+        }
+        span {
+          color: rgb(129, 129, 128);
+          font-size: 0.8rem;
+          position: relative;
+          top: -3px;
+        }
+        button.clearButton {
+          outline: none;
+          border: none;
+          top: -3px;
+          left: 16px;
+          position: relative;
+          color: #333;
+          background-color: #888;
+        }
+        .inputArea {
+          margin: 5px 0 0 0;
+          input[type="text"] {
+            margin: 0 5px 0 0;
+            font-size: 1.2rem;
+            width: 200px;
+          }
+          button {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .todoList {
+        background: rgb(158, 158, 158);
+        margin: 10px 0 0 0;
+        padding: 10px;
+        // width: 286px;
+        height: 200px;
+        font-size: 1.3rem;
+        overflow: auto;
+      }
+    }
+  }
 }

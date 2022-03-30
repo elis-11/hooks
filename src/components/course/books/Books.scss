@@ -1,0 +1,83 @@
+.EBook {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  
+    .container {
+      display: column;
+      justify-content: center;
+      place-items: center;
+      width: 70%;
+      display: column;
+      // border: 2px solid rgb(230, 81, 81);
+  
+      .add {
+        width: 99%;
+        height: 3rem;
+        margin: 2px;
+        border-radius: 4px;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid #ccc;
+        background-color: #e6e0e0;
+      }
+      .book {
+        position: relative;
+        height: 3rem;
+        margin: 2px;
+        border-radius: 4px;
+        font-size: 20px;
+        // color: grey;
+        border: 2px solid #ccc;
+      }
+      .icons {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        font-size: 1.4rem;
+        transform: translateY(-50%);
+        .icon {
+          padding-right: 1px;
+          color: rgb(153, 152, 152);
+          cursor: pointer;
+          :hover {
+            color: rgb(248, 244, 244);
+            outline: none;
+          }
+        }
+      }
+      .edit-form {
+        input {
+          width: 68%;
+          height: 2.5rem;
+          border-radius: 4px;
+          font-size: 20px;
+          padding-left: 5px;
+          border: 2px solid #ccc;
+          background-color: #e6e0e0;
+        }
+        .update {
+          width: 15%;
+          height: 2.5rem;
+          border-radius: 4px;
+          font-size: 20px;
+          padding: 0;
+          background-color: #e6e0e0;
+          border: 2px solid #ccc;
+        }
+        .cancel {
+          width: 15%;
+          height: 2.5rem;
+          border-radius: 4px;
+          font-size: 20px;
+          padding: 0;
+          background-color: #e6e0e0;
+          border: 2px solid #ccc;
+        }
+      }
+    }
+  }
+  

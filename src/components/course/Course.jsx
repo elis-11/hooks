@@ -6,6 +6,7 @@ import './Course.scss'
 import { Apis } from "./apis/Apis";
 import { Java } from './java/Java';
 import { Todos } from './todos/Todos';
+import { Books } from "./books/Books";
 
 export const Course = () => {
   return (
@@ -15,6 +16,7 @@ export const Course = () => {
         <li>
           <Link to="">First</Link>
           <Link to="color">Color</Link>
+          <Link to="books">Books</Link>
           <Link to="apis">Apis</Link>
           <Link to="java">Java</Link>
           <Link to="todos">Todos</Link>
@@ -24,6 +26,7 @@ export const Course = () => {
       <Routes>
         <Route path="/" element={<First />} />
         <Route path="color" element={<Color />} />
+        <Route path="books" element={<Books />} />
         <Route path="apis" element={<Apis />} />
         <Route path="todos" element={<Todos />} />
         <Route path="java" element={<Java />} />
