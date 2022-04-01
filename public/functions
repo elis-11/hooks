@@ -1,9 +1,0 @@
---delete--
-  const handleDeleteClick =(id)=>{
-      const removeItem= books.filter((book) =>{
-          return book.id !== id
-      })
-      setBooks(removeItem)
-  }
-<FaTrashAlt className="icon" onClick={() => handleDeleteClick(book.id)} role="button" tabIndex="0" />
---------------------

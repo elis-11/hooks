@@ -1,14 +1,19 @@
 {
-  "items": [
+  "posts": [
     {
       "id": 1,
-      "checked": false,
-      "list": "Todo"
-    },
-    {
-      "id": 5,
-      "checked": true,
-      "list": "Cookies"
+      "title": "json-server",
+      "author": "typicode"
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
