@@ -3,7 +3,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Invoices, { Invoice } from "./components/Invoices";
 import "./App.scss";
-import { Dash } from "./components/dash/Dash";
 import { Dashboard } from "./components/Dashboard";
 import { Count } from "./pages/Count";
 import { Home } from "./pages/Home";
@@ -37,7 +36,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="dashboard/*" element={<Dashboard />} />
-        <Route path="dash/*" element={<Dash />} />
         <Route path="todo" element={<Todo />} />
         <Route path="count" element={<Count />} />
         <Route path="course/*" element={<Course />} />

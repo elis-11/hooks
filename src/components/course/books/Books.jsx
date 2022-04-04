@@ -20,15 +20,15 @@ export const Books = () => {
     localStorage.setItem("books", JSON.stringify(books));
   }, [books]);
 
+
   const handleInputChange = (e) => {
     setBook(e.target.value);
   };
-
+  
   const handleEditInputChange = (e) => {
     setCurrentBook({ ...currentBook, text: e.target.value });
     console.log(currentBook);
   };
-
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
@@ -44,19 +44,10 @@ export const Books = () => {
     }
     setBook("");
   };
-
   const handleEditFormSubmit = (e) => {
     e.preventDefault();
     handleUpdateBook(currentBook.id, currentBook);
   };
-
-  const handleDeleteClick = (id) => {
-    const removeItem = books.filter((book) => {
-      return book.id !== id;
-    });
-    setBooks(removeItem);
-  };
-
   const handleUpdateBook = (id, updatedBook) => {
     const updatedItem = books.map((book) => {
       return book.id === id ? updatedBook : book;
@@ -64,10 +55,16 @@ export const Books = () => {
     setIsEditing(false);
     setBooks(updatedItem);
   };
-
   const handleEditClick = (book) => {
     setIsEditing(true);
     setCurrentBook({ ...book });
+  };
+  
+  const handleDeleteClick = (id) => {
+    const removeItem = books.filter((book) => {
+      return book.id !== id;
+    });
+    setBooks(removeItem);
   };
 
   return (

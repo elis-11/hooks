@@ -7,6 +7,7 @@ import { Apis } from "./apis/Apis";
 import { Java } from './java/Java';
 import { Todos } from './todos/Todos';
 import { Books } from "./books/Books";
+import { Dash } from "./dash/Dash";
 
 export const Course = () => {
   return (
@@ -20,6 +21,7 @@ export const Course = () => {
           <Link to="apis">Apis</Link>
           <Link to="java">Java</Link>
           <Link to="todos">Todos</Link>
+          <Link to="dash">Dash</Link>
         </li>
       </ul>
         </div>
@@ -30,6 +32,7 @@ export const Course = () => {
         <Route path="apis" element={<Apis />} />
         <Route path="todos" element={<Todos />} />
         <Route path="java" element={<Java />} />
+        <Route path="dash" element={<Dash />} />
       </Routes>
     </div>
   );
