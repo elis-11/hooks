@@ -25,14 +25,6 @@ export const Nav = () => {
         </li>
         <li>
           <NavLink
-            to="/dash"
-            className={(navData) => (navData.isActive ? "active" : "none")}
-          >
-            Dash
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
             to="/todo"
             className={(navData) => (navData.isActive ? "active" : "none")}
           >
