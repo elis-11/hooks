@@ -11,7 +11,10 @@ export const Todo = () => {
   const API_URL = "http://localhost:3500/items";
   // const API_URL = "https://jsonplaceholder.typicode.com/todos/1";
 
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState([
+    // {id: 1,checked: false,list: "Todo",},
+    // {id: 5, checked: true, list: "Cookies"},
+  ]);
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
   const [fetchError, setFetchError] = useState(null);

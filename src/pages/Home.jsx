@@ -7,8 +7,8 @@ import "./Home.scss";
 export const Home = () => {
   //  <div className="card">
   //    <img src={elis} alt=""  />
-  //  </div> 
-    const [books, setBooks] = useState(() => {
+  //  </div>
+  const [books, setBooks] = useState(() => {
     const savedBooks = localStorage.getItem("books");
     if (savedBooks) {
       return JSON.parse(savedBooks);
@@ -24,14 +24,12 @@ export const Home = () => {
     localStorage.setItem("books", JSON.stringify(books));
   }, [books]);
 
-
+  useEffect(() => {
+    console.log("use effect ran");
+  });
+// ADD BOOK
   const handleInputChange = (e) => {
     setBook(e.target.value);
-  };
-  
-  const handleEditInputChange = (e) => {
-    setCurrentBook({ ...currentBook, text: e.target.value });
-    console.log(currentBook);
   };
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -48,6 +46,11 @@ export const Home = () => {
     }
     setBook("");
   };
+  // EDIT BOOK
+    const handleEditInputChange = (e) => {
+      setCurrentBook({ ...currentBook, text: e.target.value });
+      console.log(currentBook);
+    };
   const handleEditFormSubmit = (e) => {
     e.preventDefault();
     handleUpdateBook(currentBook.id, currentBook);
@@ -63,7 +66,8 @@ export const Home = () => {
     setIsEditing(true);
     setCurrentBook({ ...book });
   };
-  
+
+  // DELETE BOOK
   const handleDeleteClick = (id) => {
     const removeItem = books.filter((book) => {
       return book.id !== id;
@@ -74,7 +78,7 @@ export const Home = () => {
   return (
     <div className="Books">
       <header>
-        <h2>Books List</h2>
+        <h2>Todo List</h2>
       </header>
       <div className="container">
         {isEditing ? (
