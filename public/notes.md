@@ -5,7 +5,8 @@ TODO:
 
 ### npm i react-icons
 ---
-- elis@11:~/webs/hooks$ npx json-server -p 3500 -w data/db.json
+- elis@11:~/webs/hooks$ 
+npx json-server -p 3500 -w data/db.json
 ---
 - jsonplaceholder
 ### https://jsonplaceholder.typicode.com/
