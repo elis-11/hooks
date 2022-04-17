@@ -1,5 +1,5 @@
 import React from 'react'
-import './Dash.scss';
+import './Name.scss';
 
 
 export const Footer = () => {

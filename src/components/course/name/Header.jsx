@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './Dash.scss';
+import './Name.scss';
 
 
 export const Header = () => {

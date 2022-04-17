@@ -1,11 +1,11 @@
 import { Content } from "./Content";
-import "./Dash.scss";
+import "./Name.scss";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
-export const Dash = () => {
+export const Name = () => {
   return (
-    <div className="Dash">
+    <div className="Name">
       <Header />
       <main>
         <Content />
