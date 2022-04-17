@@ -4,6 +4,7 @@
 elis@11:~/webs/hooks/images$:
 
 #!/bin/bash
+#! /images
  
 MAX=20
 if [[ ! -z "$1" ]]; then
