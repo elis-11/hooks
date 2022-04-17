@@ -3,7 +3,6 @@
 
 elis@11:~/webs/hooks/images$:
 
-#!/bin/bash
 #! /images
  
 MAX=20
