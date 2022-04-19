@@ -132,7 +132,12 @@ export const Home = () => {
           ))}
         </div>
       </div>
-      <footer>Copyright &copy; 2022</footer>
+      <footer>
+        <div>
+      {books.length} List {books.length === 1 ? "User" : "Users"}
+        </div>
+       <p>Copyright &copy; 2022</p>
+        </footer>
     </div>
   );
 };
