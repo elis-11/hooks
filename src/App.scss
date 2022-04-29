@@ -18,15 +18,12 @@ code {
 .App {
   width: 100%;
   height: 100vh;
+  display: column;
   text-align: center;
-  background-color: #282c34;
-  // display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 16px;
-  justify-content: center;
+  font-size: 14px;
   color: white;
   padding: 1vw;
+  background-color: #282c34;
 
   //-----ROUTER-6----
   body {
@@ -44,11 +41,6 @@ code {
     margin: 10px auto;
   }
 
-  .App {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
   .section {
     height: 100vh;
   }
@@ -68,7 +60,7 @@ code {
     background-color: white;
   }
   li a {
-    padding: 1rem;
+    padding: 1em;
     text-decoration: none;
   }
 }

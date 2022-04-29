@@ -3,13 +3,11 @@
 }
 .Books {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // display: column;
+  // align-items: center;
   font-size: calc(10px + 2vmin);
   // background-color: #e6e0e0;
-
+  
   header {
     border-bottom: 2px solid #ccc;
     height: 10vh;
@@ -22,11 +20,12 @@
     color: white;
   }
   .container {
-    display: column;
-    justify-content: center;
-    // place-items: center;
-    width: 70%;
+    width: 73%;
     height: 67vh;
+    // background-color: #e6e0e0;
+    display: column;
+    // justify-content: center;
+    // place-items: center;
     // border: 2px solid #ccc;
     form {
       height: 2rem;
@@ -45,7 +44,7 @@
     .book-list {
       width: 100%;
       .book{
-      position: relative;
+      // position: relative;
       height: 3rem;
       margin: 4px;
       border-radius: 4px;
@@ -56,7 +55,7 @@
     }
     }
     .icons {
-      position: absolute;
+      // position: absolute;
       top: 50%;
       right: 0;
       font-size: 1.4rem;
@@ -103,7 +102,7 @@
   }
   footer {
     width: 100%;
-    height: 8vh;
+    // height: 5vh;
     border-top: 2px solid #ccc;
     display: grid;
     place-items: center; // align vertical & horizintal
