@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Link, Route } from "react-router-dom";
 import { Profile } from "./auth/Profile";
 import { Orders } from "./auth/Orders";
-import { OrderDetails } from "./auth/OrderDetails"
+import { OrderDetails } from "./auth/OrderDetails";
 import "../styles/Dashboard.scss";
 
 export const Dashboard = () => {

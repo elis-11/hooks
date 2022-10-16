@@ -5,9 +5,6 @@ import { FaTrashAlt } from "react-icons/fa";
 import "./Home.scss";
 
 export const Home = () => {
-  //  <div className="card">
-  //    <img src={elis} alt=""  />
-  //  </div>
   const [books, setBooks] = useState(() => {
     const savedBooks = localStorage.getItem("books");
     if (savedBooks) {

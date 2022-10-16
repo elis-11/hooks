@@ -1,0 +1,49 @@
+{
+    "cars" :[
+        {
+            "_id" : "1",
+            "brand" : "Toyota",
+            "model" : "Prius",
+            "color" : "green",
+            "year" : 2009,
+            "size" : "Large",
+            "price" : 79
+       },
+        {
+            "_id" : "2",
+            "brand" : "Ford",
+            "model" : "Prius",
+            "color" : "red",
+            "year" : 2012,
+            "size" : "Large",
+            "price" : 61
+       },
+        {
+            "_id" : "3",
+            "brand" : "Volvo",
+            "model" : "Prius",
+            "color" : "black",
+            "year" : 2020,
+            "size" : "Large",
+            "price" : 94
+       },
+        {
+            "_id" : "4",
+            "brand" : "BMW",
+            "model" : "Prius",
+            "color" : "black",
+            "year" : 2019,
+            "size" : "Large",
+            "price" : 99
+       },
+        {
+            "_id" : "5",
+            "brand" : "Mercedes",
+            "model" : "Prius",
+            "color" : "green",
+            "year" : 2021,
+            "size" : "Large",
+            "price" : 99
+       }
+    ]
+}
